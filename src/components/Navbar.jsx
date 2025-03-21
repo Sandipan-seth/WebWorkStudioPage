@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScrollSpy = () => {
-      const sections = ["home", "about", "contact"];
+      const sections = ["home", "about", "contact", "service"];
       let currentSection = "home";
 
       sections.forEach((id) => {
@@ -49,19 +49,22 @@ const Navbar = () => {
         backdrop-blur-lg shadow-md fixed top-0 md:top-5 left-0 md:left-1/2 md:-translate-x-1/2 z-50`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-600">WWS.</h1>
+        {/* logo */}
+        <h1 className="text-xl font-bold text-blue-600">
+          WWS.
+        </h1>
 
-        {/* Desktop Menu - Centered on md screens */}
+        {/* Desktop Menu */}
         <ul className="hidden md:flex md:w-full md:justify-center space-x-6 text-gray-700 font-medium">
-          {["home", "about", "contact"].map((id) => (
+          {["home", "about", "service", "contact"].map((id) => (
             <li
               key={id}
               className={`cursor-pointer hover:text-blue-500 ${
                 activeSection === id ? "text-blue-600 font-bold" : ""
               }
               ${
-                activeSection==="home" && activeSection != id
-                  ? "text-white "
+                activeSection === "home" && activeSection != id
+                  ? "text-white"
                   : ""
               }`}
               onClick={() => handleScroll(id)}
@@ -89,7 +92,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with Smooth Transition */}
+      {/* Mobile Menu */}
 
       <div
         className={`md:hidden absolute w-full bg-white shadow-lg flex flex-col justify-around items-center h-screen left-0 top-16 transition-all duration-300 ease-in-out transform ${
@@ -98,8 +101,8 @@ const Navbar = () => {
             : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
-        <ul className=" p-4 items-center justify-center flex flex-col space-y-4 text-gray-700 text-center">
-          {["home", "about", "contact"].map((id) => (
+        <ul className="text-2xl p-4 items-center justify-center flex flex-col space-y-4 text-gray-700 text-center">
+          {["home", "about", "service", "contact"].map((id) => (
             <li
               key={id}
               className={`cursor-pointer hover:text-blue-500 ${
@@ -111,6 +114,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         {/* Social Icons */}
         <div className=" flex justify-center gap-4 mt-4">
           <a href={links.linkedin} target="_blank">
