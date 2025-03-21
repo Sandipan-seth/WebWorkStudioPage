@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full md:w-2/3 rounded-md ${
-        isOpen ? "bg-white" : "bg-white/50"
+        isOpen ? "bg-white" : "bg-white/10"
       }
       ${activeSection === "home" ? "md:bg-white/10" : "md:bg-gray-200/50"}
         backdrop-blur-lg shadow-md fixed top-0 md:top-5 left-0 md:left-1/2 md:-translate-x-1/2 z-50`}
