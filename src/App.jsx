@@ -1,13 +1,10 @@
 import React from 'react'
 import { Route, Router, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import "./App.css"
+import MainPage from "./pages/MainPage";
 
 const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  )
+  return <MainPage />;
 }
 
 export default App
