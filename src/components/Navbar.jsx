@@ -45,7 +45,7 @@ const Navbar = () => {
       className={`w-full md:w-2/3 rounded-md ${
         isOpen ? "bg-white" : "bg-white/50"
       }
-      ${activeSection === "home" ? "md:bg-white" : "md:bg-gray-200/50"}
+      ${activeSection === "home" ? "md:bg-white/0" : "md:bg-gray-200/50"}
         backdrop-blur-lg shadow-md fixed top-0 md:top-5 left-0 md:left-1/2 md:-translate-x-1/2 z-50`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -58,6 +58,11 @@ const Navbar = () => {
               key={id}
               className={`cursor-pointer hover:text-blue-500 ${
                 activeSection === id ? "text-blue-600 font-bold" : ""
+              }
+              ${
+                activeSection==="home" && activeSection != id
+                  ? "text-white "
+                  : ""
               }`}
               onClick={() => handleScroll(id)}
             >
