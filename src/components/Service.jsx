@@ -12,10 +12,10 @@ const Service = () => {
         usage.
       </p>
 
-      <div className="flex justify-around flex-col gap-10 md:flex-row md:gap-0 mt-10">
+      <div className="flex justify-center flex-col gap-10 md:flex-row md:gap-10 mt-10">
         <Card
           color="#fdc346"
-          heading="UI"
+          heading="UI/UX Design"
           description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
         />
         <Card

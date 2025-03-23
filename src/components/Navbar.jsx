@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { Camera, Facebook, Instagram, Linkedin } from "lucide-react";
-import links from "../assets/Links";
+import {links} from "../assets/Links";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
