@@ -1,5 +1,5 @@
-import React from 'react'
-import Card from './ServiceComponent/Card';
+import React from "react";
+import Card from "./ServiceComponent/Card";
 
 const Service = () => {
   return (
@@ -12,13 +12,21 @@ const Service = () => {
         usage.
       </p>
 
-      <div>
-        <Card className="bg-[#fdc346]" />
-        <Card className="bg-[#9ad3cf]" />
-        <Card className="bg-[#86fbad]" />
+      <div className="flex justify-around flex-col gap-10 md:flex-row md:gap-0 mt-10">
+        <Card
+          color="#fdc346"
+          heading="UI"
+          description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
+        />
+        <Card
+          color="#9ad3cf"
+          heading="Web Development"
+          description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
+        />
+        {/* <Card color="#86fbad" heading="AI" /> */}
       </div>
     </div>
   );
-}
+};
 
-export default Service
+export default Service;
