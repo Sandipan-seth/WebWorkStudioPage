@@ -21,7 +21,7 @@ const RotatingCard = ({ frontContent, backContent }) => {
 
         {/* Back Side */}
         <div className="absolute w-full h-full flex items-center justify-center bg-gray-800 text-white rounded-xl shadow-lg rotate-y-180 backface-hidden">
-          <p className="text-lg">{backContent}</p>
+          <p className="text-lg">{backContent}.</p>
         </div>
       </div>
     </div>
