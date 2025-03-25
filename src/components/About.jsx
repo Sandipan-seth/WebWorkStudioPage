@@ -12,10 +12,26 @@ const About = () => {
       </h1>
 
       <div className="w-full flex flex-wrap md:flex-row items-center justify-center gap-8">
-        <RotatingCard frontContent="Rupam Mondal" backContent="Backend Developer" />
-        <RotatingCard frontContent="Debdeep Guha" backContent="Developer" />
-        <RotatingCard frontContent="Sandipan Seth" backContent="Frontend Developer" />
-        <RotatingCard frontContent="Sohom Das" backContent="UI/UX Designer" />
+        <RotatingCard
+          name="Rupam Mondal"
+          backContent="Backend Developer"
+          color="#9ad3cf"
+        />
+        <RotatingCard
+          name="Debdeep Guha"
+          backContent="Developer"
+          color="#fdc346"
+        />
+        <RotatingCard
+          name="Sandipan Seth"
+          backContent="Frontend Developer"
+          color="#88fcac"
+        />
+        <RotatingCard
+          name="Sohom Das"
+          backContent="UI/UX Designer"
+          color="#9ad3cf"
+        />
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./RotatingCard.css";
+import { dp } from "../../assets/Links";
 
-const RotatingCard = ({ frontContent, backContent }) => {
+const RotatingCard = ({ name, backContent,color }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -15,13 +16,22 @@ const RotatingCard = ({ frontContent, backContent }) => {
         }`}
       >
         {/* Front Side */}
-        <div className="absolute w-full h-full flex flex-col items-center justify-center bg-blue-500 text-white rounded-xl shadow-lg backface-hidden">
-          <h2 className="text-xl font-bold">{frontContent}</h2>
+
+        <div
+          className="absolute w-full h-full flex flex-col items-center justify-center text-white rounded-xl shadow-lg backface-hidden"
+          style={{ backgroundColor: color }}
+        >
+          <img
+            src={dp[name.slice(0, name.indexOf(" "))]}
+            alt="profile"
+            className="w-32 h-32 rounded-full"
+          />
+          <h2 className="text-xl font-bold">{name}</h2>
         </div>
 
         {/* Back Side */}
         <div className="absolute w-full h-full flex items-center justify-center bg-gray-800 text-white rounded-xl shadow-lg rotate-y-180 backface-hidden">
-          <p className="text-lg">{backContent}.</p>
+          <p className="text-lg">{backContent}</p>
         </div>
       </div>
     </div>
