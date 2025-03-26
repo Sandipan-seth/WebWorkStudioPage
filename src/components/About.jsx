@@ -30,7 +30,7 @@ const About = () => {
         <RotatingCard
           name="Sohom Das"
           backContent="UI/UX Designer"
-          color="#9ad3cf"
+          color="#38f9fc"
         />
       </div>
     </div>
