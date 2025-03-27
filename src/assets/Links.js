@@ -19,23 +19,23 @@ const links = {
 const profileLinks = {
   Debdeep: {
     linkedin: "https://www.linkedin.com/in/debdeep-guha-43411b274/",
-    instagram: "https://www.instagram.com/debdeepdas_/",
-    facebook: "https://www.facebook.com/debdeep.das.908",
+    instagram: "https://www.instagram.com/lioneldeb27/",
+    facebook: "https://www.facebook.com/debdeep.guha.39",
   },
   Sandipan: {
     linkedin: "https://www.linkedin.com/in/sandipan-seth/",
-    instagram: "https://www.instagram.com/sandipan_mondal_/",
-    facebook: "https://www.facebook.com/sandipan.mondal.908",
+    instagram: "https://www.instagram.com/_.sandipan.____/",
+    facebook: "https://www.facebook.com/profile.php?id=100070987413365",
   },
   Rupam: {
     linkedin: "https://www.linkedin.com/in/rupam-mondal-37b653252/",
-    instagram: "https://www.instagram.com/rupam_mondal_/",
-    facebook: "https://www.facebook.com/rupam.mondal.908",
+    instagram: "https://www.instagram.com/rupammondal123/",
+    facebook: "https://www.facebook.com",
   },
   Sohom: {
     linkedin: "https://www.linkedin.com/in/sohom-das-245791267/",
-    instagram: "https://www.instagram.com/sohom_mondal_/",
-    facebook: "https://www.facebook.com/sohom.mondal.908",
+    instagram: "https://www.instagram.com/sohom_2003_7/",
+    facebook: "https://www.facebook.com",
   },
 };
 
@@ -44,6 +44,6 @@ const dp = {
   Sandipan: sandipan,
   Rupam: rupam,
   Sohom: sohom,
-}
+};
 
 export { img, links, dp, profileLinks };

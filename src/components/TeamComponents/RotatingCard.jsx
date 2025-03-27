@@ -40,14 +40,14 @@ const RotatingCard = ({ name, backContent, color }) => {
               <Linkedin size={28} className="text-[#0077B5]" />
             </a>
             <a
-              href={links.instagram}
+              href={profileLinks[name.split(" ")[0]].instagram}
               target="_blank"
               className="hover:scale-110 transition"
             >
               <Instagram size={28} className="text-[#C13584]" />
             </a>
             <a
-              href={links.facebook}
+              href={profileLinks[name.split(" ")[0]].facebook}
               target="_blank"
               className="hover:scale-110 transition"
             >
