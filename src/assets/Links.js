@@ -21,21 +21,25 @@ const profileLinks = {
     linkedin: "https://www.linkedin.com/in/debdeep-guha-43411b274/",
     instagram: "https://www.instagram.com/lioneldeb27/",
     facebook: "https://www.facebook.com/debdeep.guha.39",
+    github: "https://github.com/Debdeep-Guha27",
   },
   Sandipan: {
     linkedin: "https://www.linkedin.com/in/sandipan-seth/",
     instagram: "https://www.instagram.com/_.sandipan.____/",
     facebook: "https://www.facebook.com/profile.php?id=100070987413365",
+    github: "https://github.com/Sandipan-seth",
   },
   Rupam: {
     linkedin: "https://www.linkedin.com/in/rupam-mondal-37b653252/",
     instagram: "https://www.instagram.com/rupammondal123/",
     facebook: "https://www.facebook.com",
+    github: "https://github.com/Rupam-Mondal",
   },
   Sohom: {
     linkedin: "https://www.linkedin.com/in/sohom-das-245791267/",
     instagram: "https://www.instagram.com/sohom_2003_7/",
     facebook: "https://www.facebook.com",
+    github: "https://github.com/Sohom-Das2003",
   },
 };
 

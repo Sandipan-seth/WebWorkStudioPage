@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "./RotatingCard.css";
 import { dp, links, profileLinks } from "../../assets/Links";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  GithubIcon,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 const RotatingCard = ({ name, backContent, color }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -52,6 +58,14 @@ const RotatingCard = ({ name, backContent, color }) => {
               className="hover:scale-110 transition"
             >
               <Facebook size={28} className="text-[#1877F2]" />
+            </a>
+
+            <a
+              href={profileLinks[name.split(" ")[0]].github}
+              target="_blank"
+              className="hover:scale-110 transition"
+            >
+              <GithubIcon size={28} className="text-[#333]" />
             </a>
           </div>
         </div>
