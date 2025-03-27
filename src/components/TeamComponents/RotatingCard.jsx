@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./RotatingCard.css";
-import { dp, links } from "../../assets/Links";
+import { dp, links, profileLinks } from "../../assets/Links";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const RotatingCard = ({ name, backContent, color }) => {
@@ -33,7 +33,7 @@ const RotatingCard = ({ name, backContent, color }) => {
 
           <div className="hidden md:flex items-center justify-center gap-4 mt-4">
             <a
-              href={links.linkedin}
+              href={profileLinks[name.split(" ")[0]].linkedin}
               target="_blank"
               className="hover:scale-110 transition"
             >
