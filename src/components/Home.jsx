@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import background from "../assets/background.jpg";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div
       className="relative w-screen h-screen flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat"
@@ -16,21 +19,21 @@ const Home = () => {
           Your Trusted <span className="text-blue-400">Freelance Agency</span>
         </h1>
         <p className="text-lg text-gray-200 mt-4">
-          We are specialized in designing apps and websites and products for
-          industry purpose and well bell and consulting makes things look do
+          We specialize in app and web design for industry professionals.
         </p>
         <div className="mt-6 flex justify-center space-x-4">
           <button
             className="bg-blue-500 w-1/3 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition"
-            onClick={() =>
-              document
-                .getElementById("about")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+            onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
           >
             Get Started
           </button>
-          
+          <button
+            className="bg-blue-500 w-1/3 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition"
+            onClick={() => navigate("/meetup")}
+          >
+            Book a Call
+          </button>
         </div>
       </div>
     </div>
@@ -38,3 +41,4 @@ const Home = () => {
 };
 
 export default Home;
+
