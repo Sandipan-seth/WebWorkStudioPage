@@ -4,7 +4,7 @@ import RotatingCard from "./TeamComponents/RotatingCard";
 const About = () => {
   return (
     <div
-      className="container mx-auto px-6 py-32 h-fit flex flex-col items-center"
+      className="mx-auto bg-white w-screen px-6 py-32 h-fit flex flex-col items-center"
       id="about"
     >
       <h1 className="text-4xl md:text-7xl font-bold text-center text-gray-800 mb-10">

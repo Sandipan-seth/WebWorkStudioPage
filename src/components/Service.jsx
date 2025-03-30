@@ -3,7 +3,7 @@ import Card from "./ServiceComponent/Card";
 
 const Service = () => {
   return (
-    <div className="container mx-auto px-6 py-32 h-screen" id="service">
+    <div className="mx-auto px-6 py-32 h-screen bg-white" id="service">
       <h1 className="text-4xl md:text-7xl font-bold text-center text-gray-800">
         Our Services
       </h1>
