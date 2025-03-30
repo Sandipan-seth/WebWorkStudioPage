@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScrollSpy = () => {
-      const sections = ["home", "about", "contact", "service"];
+      const sections = ["home", "about","service", "work", "contact"];
       let currentSection = "home";
 
       sections.forEach((id) => {
@@ -32,6 +32,7 @@ const Navbar = () => {
       });
 
       setActiveSection(currentSection);
+
     };
 
     window.addEventListener("scroll", handleScrollSpy);
@@ -56,7 +57,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex md:w-full md:justify-center space-x-6 text-gray-700 font-medium">
-          {["home", "about", "service", "contact"].map((id) => (
+          {["home", "about", "service", "work", "contact"].map((id) => (
             <li
               key={id}
               className={`cursor-pointer hover:text-blue-500 ${
@@ -102,7 +103,7 @@ const Navbar = () => {
         }`}
       >
         <ul className="text-2xl p-4 items-center justify-center flex flex-col space-y-4 text-gray-700 text-center">
-          {["home", "about", "service", "contact"].map((id) => (
+          {["home", "about", "service","work", "contact"].map((id) => (
             <li
               key={id}
               className={`cursor-pointer hover:text-blue-500 ${
