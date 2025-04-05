@@ -19,7 +19,12 @@ const Service = () => {
           description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
         />
         <Card
-          color="#9ad3cf"
+          color="#38f9fc"
+          heading="Web Development"
+          description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
+        />
+        <Card
+          color="#86fcad"
           heading="Web Development"
           description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
         />
@@ -30,3 +35,9 @@ const Service = () => {
 };
 
 export default Service;
+
+
+// deployment and maintainance.
+// Saas product development.
+// Web development
+// Ui ux
