@@ -14,6 +14,18 @@ const testimonials = [
     quote: "Exceptional results and outstanding support.",
     src: "https://images.pexels.com/photos/4307884/pexels-photo-4307884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
+  {
+    name: "John Smith",
+    designation: "CTO at Startup Inc.",
+    quote: "Exceptional results and outstanding support.",
+    src: "https://images.pexels.com/photos/4307884/pexels-photo-4307884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    name: "John Smith",
+    designation: "CTO at Startup Inc.",
+    quote: "Exceptional results and outstanding support.",
+    src: "https://images.pexels.com/photos/4307884/pexels-photo-4307884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
 ];
 
 const Testimonial = () => {
