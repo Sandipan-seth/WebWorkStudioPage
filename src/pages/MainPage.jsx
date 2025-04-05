@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import Service from '../components/Service'
 import Works from '../components/Works'
 import Footer from '../components/Footer'
+import Testimonial from '../components/Testimonial'
 
 const MainPage = () => {
   return (

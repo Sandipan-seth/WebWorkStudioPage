@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "./ServiceComponent/Card";
+import Testimonial from "./Testimonial";
 
 const Service = () => {
   return (
-    <div className="mx-auto px-6 py-32 h-screen bg-white" id="service">
+    <div className="mx-auto px-6 py-32 h-fit bg-white" id="service">
       <h1 className="text-4xl md:text-7xl font-bold text-center text-gray-800">
         Our Services
       </h1>
@@ -29,7 +30,10 @@ const Service = () => {
           description=" We are specialized in designing apps and websites and products for industry purpose and well bell and consulting makes things look do"
         />
         {/* <Card color="#86fbad" heading="AI" /> */}
+
+
       </div>
+        <Testimonial />
     </div>
   );
 };
