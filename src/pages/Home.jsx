@@ -1,10 +1,11 @@
 import React from 'react'
+import HowItWork from '../components/HomeComponents/HowItWork'
 
 
 const Home = () => {
   return (
     <div>
-      <h1 className='bg-black text-white'>app</h1>
+      <HowItWork />
     </div>
   )
 }
