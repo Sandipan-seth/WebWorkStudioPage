@@ -1,11 +1,84 @@
-import React from 'react'
+import React from "react";
+import Step1 from "../../assets/HomeAssets/HowItWork/Step1.png";
+import Step2 from "../../assets/HomeAssets/HowItWork/Step2.png";
 
-const HowItWork = () => {
+const steps = [
+  {
+    id: 1,
+    title: "Understanding The Problem",
+    description:
+      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+    stepLabel: "First Step",
+    image: Step1,
+  },
+  {
+    id: 2,
+    title: "Designing The Solution",
+    description:
+      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+    stepLabel: "Second Step",
+    image: Step2,
+  },
+  {
+    id: 3,
+    title: "Developing The Website",
+    description:
+      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+    stepLabel: "Third Step",
+    image: Step1,
+  },
+  {
+    id: 4,
+    title: "Deploying The Website",
+    description:
+      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+    stepLabel: "Fourth Step",
+    image: Step2,
+  },
+];
+
+export default function HowItWork() {
   return (
-    <div>
-      <h1 className="bg-black text-white">app</h1>
+    <div className="bg-white py-16 max-w-7xl mx-auto px-4">
+      <h2 className="text-5xl md:text-7xl font-bold text-center mb-12">
+        How It <span className="text-[#b9f33f]">Works</span>
+      </h2>
+
+      {steps.map((step, index) => (
+        <div
+          key={step.id}
+          className={`mb-12 flex flex-col md:flex-row items-stretch border-b py-5 md:py-10 ${
+            index % 2 === 0 ? "md:flex-row-reverse" : ""
+          }`}
+        >
+          
+          <div className="md:w-1/2 mb-6 md:mb-0 flex justify-center items-center ">
+            <div className="relative inline-block">
+              <div className="absolute top-2 left-2 w-full h-full rounded-lg bg-[#b9f33f] z-0 border border-gray-400"></div>
+
+
+              <img
+                src={step.image}
+                alt={`Step ${step.id}`}
+                className="relative z-10 max-w-xs w-full h-auto rounded-lg border border-black"
+              />
+            </div>
+          </div>
+
+          
+          <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start">
+            <span className="inline-block w-fit bg-[#b9f33f] text-black px-3 py-2 md:px-5 md:py-3 rounded-full text-md font-semibold mb-2 ">
+              {step.stepLabel}
+            </span>
+            <h3 className="text-3xl md:text-5xl font-bold mb-4">
+              {step.title}
+            </h3>
+            <p className="text-gray-600 leading-tight text-sm md:text-xl">
+              {step.description}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
-
-export default HowItWork

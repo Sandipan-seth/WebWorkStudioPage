@@ -4,7 +4,7 @@ import HowItWork from '../components/HomeComponents/HowItWork'
 
 const Home = () => {
   return (
-    <div>
+    <div className='min-w-screen bg-white'>
       <HowItWork />
     </div>
   )
