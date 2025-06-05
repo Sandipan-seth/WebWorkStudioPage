@@ -4,12 +4,12 @@ function Landingpage() {
   const content = [
     "Turning Your ideas",
     "into Impactfull",
-    "Digital Experiences"
+    "Digital Experiences",
   ];
 
   const subcontent = [
     "Webworks Studio is a creative Digital Agency specialized",
-    "in designing and developing High Impact Websites"
+    "in designing and developing High Impact Websites",
   ];
 
   return (
@@ -30,6 +30,15 @@ function Landingpage() {
         {subcontent.map((line, i) => (
           <p key={i}>{line}</p>
         ))}
+      </div>
+
+      <div className="flex gap-4 mt-8">
+        <div className="bg-black text-white rounded-2xl px-5 py-2 text-base font-medium text-center w-40">
+          Book a Call
+        </div>
+        <div className="bg-[#B9F33F] text-black rounded-2xl px-5 py-2 text-base font-medium text-center w-40">
+          Explore Service
+        </div>
       </div>
     </div>
   );
