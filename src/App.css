@@ -2,6 +2,12 @@
   display: none;
 }
 
+*::selection {
+  background: #2ef307b2;
+  color: black;  
+}
+
+
 html {
   scroll-behavior: smooth;
 }
