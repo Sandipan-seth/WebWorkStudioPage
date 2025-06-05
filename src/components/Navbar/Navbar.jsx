@@ -4,17 +4,16 @@ import { FaLinkedin, FaGithub, FaTwitter, FaBars, FaTimes } from "react-icons/fa
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const details = ["Home", "About us", "Services", "Blogs", "Contact us"];
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b px-6 py-1 md:py-3 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b px-6 py-1 lg:py-3 flex items-center justify-between">
         <div>
           <img className="h-12 cursor-pointer" src={Logo} alt="Logo" />
         </div>
 
-        <div className="hidden md:flex gap-14">
+        <div className="hidden lg:flex gap-14">
           {details.map((item, i) => (
             <div
               key={i}
@@ -25,35 +24,20 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex gap-6 text-black text-3xl">
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
+        <div className="hidden lg:flex gap-6 text-black text-3xl">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="hover:text-gray-700 transition" />
           </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="hover:text-gray-700 transition" />
           </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter className="hover:text-gray-700 transition" />
           </a>
         </div>
 
         <button
-          className="md:hidden text-black text-3xl focus:outline-none"
+          className="lg:hidden text-black text-3xl focus:outline-none"
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
         >
@@ -86,10 +70,9 @@ export default function Navbar() {
             <a
               key={i}
               href={`#${item.toLowerCase().replace(/\s/g, "")}`}
-              className={`text-black text-lg font-semibold hover:underline transition
-                transform opacity-0
-                ${menuOpen ? "animate-fadeSlideIn" : ""}
-              `}
+              className={`text-black text-lg font-semibold hover:underline transition transform opacity-0 ${
+                menuOpen ? "animate-fadeSlideIn" : ""
+              }`}
               style={{ animationDelay: `${i * 100 + 200}ms`, animationFillMode: "forwards" }}
               onClick={() => setMenuOpen(false)}
             >
@@ -115,7 +98,10 @@ export default function Navbar() {
               className={`opacity-0 transform ${
                 menuOpen ? "animate-fadeSlideIn" : ""
               }`}
-              style={{ animationDelay: `${(details.length + i) * 100 + 200}ms`, animationFillMode: "forwards" }}
+              style={{
+                animationDelay: `${(details.length + i) * 100 + 200}ms`,
+                animationFillMode: "forwards",
+              }}
             >
               <Icon className="hover:text-gray-700 transition" />
             </a>
