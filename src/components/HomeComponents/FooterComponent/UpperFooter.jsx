@@ -1,9 +1,19 @@
 import React from "react";
 import h from "../../../assets/HomeAssets/Footer/H.png";
+import FooterBg from "../../../assets/HomeAssets/Footer/FooterBg.jpg";
 
 const UpperFooter = () => {
   return (
-    <div className="hidden h-fit md:flex bg-white/80 pt-16 px-6 flex-col items-center text-center shadow-inner ">
+    <div
+      style={{
+        backgroundImage: `url(${FooterBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="hidden w-full h-fit md:flex pt-48 px-6 flex-col items-center text-center shadow-inner md:pt-64 lg:pt-80 xl:pt-96 2xl:pt-96 pb-16"
+    >
+      
       <img src={h} alt="Footer Illustration" className="w-28 h-28 mb-6" />
       <h1 className="text-7xl font-bold mb-4  text-gray-900">
         Let’s Start Your <br />
@@ -16,7 +26,6 @@ const UpperFooter = () => {
       <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition">
         Get Started
       </button>
-      
     </div>
   );
 };
