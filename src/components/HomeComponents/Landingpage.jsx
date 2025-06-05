@@ -3,7 +3,7 @@ import { AnimatedShinyTextDemo } from "./Animationtext/AnimationText";
 function Landingpage() {
   const content = [
     "Turning Your ideas",
-    "into Impactfull",
+    "into Impactful",
     "Digital Experiences",
   ];
 
@@ -13,20 +13,20 @@ function Landingpage() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-white text-black px-6 text-center">
+    <div className="flex flex-col mx-auto max-w-7xl justify-center items-center min-h-screen bg-white text-black px-6 text-center mt-5 md:mt-0">
       <div className="mb-10">
         <AnimatedShinyTextDemo />
       </div>
 
-      <div className="text-4xl md:text-5xl font-bold space-y-2 leading-tight">
+      <div className="text-5xl md:text-7xl font-bold space-y-2">
         <h1>{content[0]}</h1>
         <h1>
-          into <span style={{ color: "#B9F33F" }}>Impactfull</span>
+          into <span style={{ color: "#B9F33F" }}>Impactful</span>
         </h1>
         <h1>{content[2]}</h1>
       </div>
 
-      <div className="mt-4 text-lg md:text-xl text-gray-700 space-y-1">
+      <div className="mt-10 text-md md:text-xl text-gray-700 space-y-1">
         {subcontent.map((line, i) => (
           <p key={i}>{line}</p>
         ))}
