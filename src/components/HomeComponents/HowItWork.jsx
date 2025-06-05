@@ -39,15 +39,15 @@ const steps = [
 
 export default function HowItWork() {
   return (
-    <div className="bg-white py-16 max-w-7xl mx-auto px-4">
-      <h2 className="text-5xl md:text-7xl font-bold text-center mb-12">
+    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4">
+      <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
         How It <span className="text-[#b9f33f]">Works</span>
       </h2>
 
       {steps.map((step, index) => (
         <div
           key={step.id}
-          className={`mb-12 flex flex-col md:flex-row items-stretch border-b py-5 md:py-10 ${
+          className={`mb-12 flex flex-col md:flex-row items-stretch py-5 md:py-10 ${
             index % 2 === 0 ? "md:flex-row-reverse" : ""
           }`}
         >

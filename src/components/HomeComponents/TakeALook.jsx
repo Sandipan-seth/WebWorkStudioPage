@@ -30,8 +30,8 @@ const steps = [
 
 export default function TakeALook() {
   return (
-    <div className="bg-white py-16 max-w-7xl mx-auto px-4 mt-5 md:mt-10">
-      <h2 className="text-5xl md:text-7xl font-bold text-center mb-12">
+    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4 mt-5 md:mt-10">
+      <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
         Take A Look At Our <span className="text-[#b9f33f]">Websites</span>
       </h2>
       <div className="space-y-12">
@@ -40,7 +40,7 @@ export default function TakeALook() {
             <div className="absolute top-2 left-2 w-full h-full rounded-xl bg-[#b9f33f] z-0"></div>
 
             <div
-              className={`relative border border-black rounded-xl px-6 py-6 md:h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white z-10
+              className={`relative border border-black rounded-xl px-6 py-6 md:min-h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white z-10
         ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center ">
