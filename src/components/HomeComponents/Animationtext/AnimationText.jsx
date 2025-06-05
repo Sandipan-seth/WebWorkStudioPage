@@ -6,7 +6,7 @@ import { AvatarCirclesDemo } from "../AvatarSection/AvatarCircles";
 
 export function AnimatedShinyTextDemo() {
   return (
-    <div className="z-10 flex min-h-64 items-center justify-center">
+    <div className="z-10 flex items-center justify-center">
       <div
         className={cn(
           "group rounded-full cursor-pointer border border-black text-base text-black dark:border-white/5 dark:bg-neutral-900 dark:text-white"
