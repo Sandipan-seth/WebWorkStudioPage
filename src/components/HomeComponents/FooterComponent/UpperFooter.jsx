@@ -3,7 +3,7 @@ import h from "../../../assets/HomeAssets/Footer/H.png";
 
 const UpperFooter = () => {
   return (
-    <div className="hidden h-fit md:flex bg-white pt-16 px-6 flex-col items-center text-center shadow-inner ">
+    <div className="hidden h-fit md:flex bg-white/80 pt-16 px-6 flex-col items-center text-center shadow-inner ">
       <img src={h} alt="Footer Illustration" className="w-28 h-28 mb-6" />
       <h1 className="text-7xl font-bold mb-4  text-gray-900">
         Let’s Start Your <br />
