@@ -2,6 +2,10 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .arimo-font {
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;

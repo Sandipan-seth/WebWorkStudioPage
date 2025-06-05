@@ -9,21 +9,21 @@ const steps = [
     id: 1,
     title: "AV Design",
     description:
-      "We am specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
+      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
     image: AV,
   },
   {
     id: 2,
     title: "Gram Panchayat",
     description:
-      "We am specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
+      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
     image: GP,
   },
   {
     id: 3,
     title: "TF Cakes",
     description:
-      "We am specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
+      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
     image: TF,
   },
 ];

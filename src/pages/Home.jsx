@@ -4,6 +4,7 @@ import TakeALook from "../components/HomeComponents/TakeALook";
 import Navbar from "@/components/Navbar/Navbar";
 import Landingpage from "@/components/HomeComponents/Landingpage";
 import bg from "../assets/bg.jpg"
+import Footer from "@/components/HomeComponents/Footer";
 
 const Home = () => {
  
@@ -18,6 +19,7 @@ const Home = () => {
       <Landingpage />
       <HowItWork />
       <TakeALook />
+      <Footer />
     </div>
   );
 };

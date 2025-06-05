@@ -67,7 +67,7 @@ export default function HowItWork() {
 
           
           <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start">
-            <span className="inline-block w-fit bg-[#b9f33f] text-black px-3 py-2 md:px-5 md:py-3 rounded-full text-md font-semibold mb-2 ">
+            <span className="inline-block w-fit bg-[#b9f33f] text-black px-5 py-2 md:px-10 md:py-3 rounded-full text-md font-semibold mb-2 ">
               {step.stepLabel}
             </span>
             <h3 className="text-3xl md:text-5xl font-bold mb-4">
