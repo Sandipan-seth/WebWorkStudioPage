@@ -6,6 +6,7 @@ import Landingpage from "@/components/HomeComponents/Landingpage";
 import bg from "../assets/bg.jpg"
 import Footer from "@/components/HomeComponents/Footer";
 import FAQ from "@/components/Faq/Faq";
+import LandingsectionImage from "@/components/HomeComponents/LandingsectionImage/LandingsectionImage";
 
 const Home = () => {
  
@@ -15,9 +16,10 @@ const Home = () => {
   };
 
   return (
-    <div className="min-w-screen bg-white relative" style={bgStyle}>
+    <div className="w-full bg-white relative" style={bgStyle}>
       <Navbar />
       <Landingpage />
+      <LandingsectionImage/>
       <HowItWork />
       <TakeALook />
       <FAQ/>
