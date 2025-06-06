@@ -11,7 +11,7 @@ const UpperFooter = () => {
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
       }}
-      className="hidden w-full h-fit md:flex pt-48 px-6 flex-col items-center text-center  md:pt-64 lg:pt-80 xl:pt-96 2xl:pt-96 pb-16 shadow-white shadow-[0_0_100px_250px_rgba(0,0,0,0.1)] "
+      className="hidden w-full h-fit md:flex pt-48 px-6 flex-col items-center text-center  md:pt-40 lg:pt-40 xl:pt-60 2xl:pt-60 pb-16 shadow-white shadow-[0_0_100px_250px_rgba(0,0,0,0.1)] "
     >
       <img src={h} alt="Footer Illustration" className="w-28 h-28 mb-6" />
       <h1 className="text-7xl font-bold mb-4  text-gray-900">
