@@ -13,7 +13,7 @@ const Contact = () => {
     <div className="w-full min-h-screen bg-white relative" style={bgStyle}>
       <Navbar />
       <Form />
-      {/* <LowerFooter /> */}
+      <LowerFooter />
     </div>
   );
 }
