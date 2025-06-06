@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import right_arrow from "../../assets/HomeAssets/FAQ/right_arrow.png";
-import faq_blackline1 from "../../assets/HomeAssets/FAQ/faq_blackline1.png";
-import faq_blackline2 from "../../assets/HomeAssets/FAQ/faq_blackline2.png";
-import faq_blackline3 from "../../assets/HomeAssets/FAQ/faq_blackline3.png";
-import faq_greenline1 from "../../assets/HomeAssets/FAQ/faq_greenline1.png";
-import faq_greenline2 from "../../assets/HomeAssets/FAQ/faq_greenline2.png";
-import faq_greenline3 from "../../assets/HomeAssets/FAQ/faq_greenline3.png";
+import right_arrow from "../../../assets/HomeAssets/FAQ/right_arrow.png";
+import faq_blackline1 from "../../../assets/HomeAssets/FAQ/faq_blackline1.png";
+import faq_blackline2 from "../../../assets/HomeAssets/FAQ/faq_blackline2.png";
+import faq_blackline3 from "../../../assets/HomeAssets/FAQ/faq_blackline3.png";
+import faq_greenline1 from "../../../assets/HomeAssets/FAQ/faq_greenline1.png";
+import faq_greenline2 from "../../../assets/HomeAssets/FAQ/faq_greenline2.png";
+import faq_greenline3 from "../../../assets/HomeAssets/FAQ/faq_greenline3.png";
+
 const tabs = ["Design", "Development", "Deployment", "Maintenance"];
 
 const data = [
@@ -40,7 +41,7 @@ const FAQ = () => {
 
                     <div className="flex items-center absolute top-1 right-6 gap-1">
                         <img src={faq_greenline1} alt="Green Line 1" className="relative h-6 translate-x-[120px] translate-y-[-24px]" />
-                        <img src={faq_greenline2} alt="Green Line 2" className="realtive h-6 translate-x-[114px] translate-y-[-18px]" />
+                        <img src={faq_greenline2} alt="Green Line 2" className="relative h-6 translate-x-[114px] translate-y-[-18px]" />
                         <img src={faq_greenline3} alt="Green Line 3" className="relative object-contain w-8 h-6 translate-x-[90px] translate-y-[-2px]" />
                     </div>
                 </div>

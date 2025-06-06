@@ -8,6 +8,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
+				aeonik: ['Aeonik', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
