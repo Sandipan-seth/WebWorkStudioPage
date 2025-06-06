@@ -36,31 +36,36 @@ export default function TakeALook() {
       </h2>
       <div className="space-y-12">
         {steps.map((step, index) => (
-          <div key={step.id} className="relative">
-            <div className="absolute top-2 left-2 w-full h-full rounded-xl bg-[#b9f33f] z-0"></div>
+          <div
+            key={step.id}
+            className="relative items-center flex justify-center "
+          >
+            <div className="w-full md:w-[80%] relative">
+              <div className="absolute top-2 md:top-4 left-2 md:left-4 mx-auto w-full h-full rounded-xl bg-[#b9f33f] z-0"></div>
 
-            <div
-              className={`relative border border-black rounded-xl px-6 py-6 md:min-h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white z-10
+              <div
+                className={`relative border mx-auto border-black rounded-xl w-full py-6 px-4 md:min-h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white z-10 
         ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
-            >
-              <div className="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center ">
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className="w-1/2 h-full rounded-lg object-cover shadow-xl"
-                />
-              </div>
+              >
+                <div className="w-full md:w-1/3 flex justify-center items-center ">
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="w-[70%] max-w-sm md:max-w-sm h-auto rounded-xl object-cover shadow-xl"
+                  />
+                </div>
 
-              <div className="md:w-1/2 md:px-12 h-full flex flex-col item-center justify-center gap-5">
-                <h3 className="text-3xl md:text-5xl font-bold mb-4">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 leading-tight text-sm md:text-xl">
-                  {step.description}
-                </p>
-                <button className="bg-[#b9f33f] text-black px-5 py-2 rounded-full font-semibold flex items-center w-fit gap-2 hover:bg-lime-400 transition">
-                  View Project <ArrowUpRight size={18} className="inline" />
-                </button>
+                <div className="w-full md:w-2/3 px-5 md:px-6 mt-6 md:mt-0 flex flex-col  items-start justify-center gap-5 ">
+                  <h3 className="text-3xl md:text-5xl font-bold">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 leading-tight text-base md:text-xl">
+                    {step.description}
+                  </p>
+                  <button className="bg-[#b9f33f] text-black px-5 py-2 rounded-full font-semibold flex items-center w-fit gap-2 hover:bg-lime-400 transition">
+                    View Project <ArrowUpRight size={18} className="inline" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
