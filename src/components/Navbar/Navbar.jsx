@@ -107,7 +107,14 @@ export default function Navbar() {
                 animationDelay: `${i * 100 + 200}ms`,
                 animationFillMode: "forwards",
               }}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                if (item.toLowerCase() === "home") {
+                  navigate("/");
+                } else {
+                  navigate(`/${item.toLowerCase().replace(/\s/g, "-")}`);
+                }
+                setMenuOpen(false);
+              }}
             >
               {item}
             </a>
