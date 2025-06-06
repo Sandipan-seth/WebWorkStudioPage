@@ -5,7 +5,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import Landingpage from "@/components/HomeComponents/Landingpage";
 import bg from "../assets/bg.jpg"
 import Footer from "@/components/HomeComponents/Footer";
-import FAQ from "@/components/Faq/Faq";
+import FAQ from "@/components/HomeComponents/Faq/Faq";
+import Testimonial from "@/components/HomeComponents/Testimonial/Testimonial";
 
 const Home = () => {
  
@@ -21,6 +22,7 @@ const Home = () => {
       <HowItWork />
       <TakeALook />
       <FAQ/>
+      <Testimonial/>
       <Footer />
     </div>
   );
