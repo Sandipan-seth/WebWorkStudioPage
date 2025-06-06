@@ -1,5 +1,5 @@
 import React from 'react'
-import contactLogo from '../../assets/ContactAssets/contactLogo.png';
+import contactLogo from '../../assets/ContactAssets/ContactLogo.png';
 
 const Form = () => {
     const [agreed, setAgreed] = React.useState(false);
