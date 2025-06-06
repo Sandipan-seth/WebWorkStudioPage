@@ -4,12 +4,12 @@ import quote_icon from "../../../assets/Vector.png"; // green quote image
 import brand_logo from "../../../assets/brand_logo.png"; // the 'av design' logo
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import faq_blackline1 from "../../../assets/faq_blackline1.png";
-import faq_blackline2 from "../../../assets/faq_blackline2.png";
-import faq_blackline3 from "../../../assets/faq_blackline3.png";
-import faq_greenline1 from "../../../assets/faq_greenline1.png";
-import faq_greenline2 from "../../../assets/faq_greenline2.png";
-import faq_greenline3 from "../../../assets/faq_greenline3.png";
+import faq_blackline1 from "../../../assets/HomeAssets/FAQ/faq_blackline1.png";
+import faq_blackline2 from "../../../assets/HomeAssets/FAQ/faq_blackline2.png";
+import faq_blackline3 from "../../../assets/HomeAssets/FAQ/faq_blackline3.png";
+import faq_greenline1 from "../../../assets/HomeAssets/FAQ/faq_greenline1.png";
+import faq_greenline2 from "../../../assets/HomeAssets/FAQ/faq_greenline2.png";
+import faq_greenline3 from "../../../assets/HomeAssets/FAQ/faq_greenline3.png";
 
 const testimonials = [
     {
