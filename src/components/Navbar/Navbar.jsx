@@ -1,10 +1,18 @@
 import { useState } from "react";
 import Logo from "../../assets/Logo.png";
-import { FaLinkedin, FaGithub, FaTwitter, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const details = ["Home", "About us", "Services", "Blogs", "Contact us"];
+  const navigate = useNavigate();
 
   return (
     <>
@@ -18,6 +26,13 @@ export default function Navbar() {
             <div
               key={i}
               className="text-black text-xl font-semibold cursor-pointer hover:underline transition"
+              onClick={() => {
+                if (item.toLowerCase() === "home") {
+                  navigate("/");
+                } else {
+                  navigate(`/${item.toLowerCase().replace(/\s/g, "-")}`);
+                }
+              }}
             >
               {item}
             </div>
@@ -25,13 +40,28 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex gap-6 text-black text-3xl">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin className="hover:text-gray-700 transition" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             <FaGithub className="hover:text-gray-700 transition" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
             <FaTwitter className="hover:text-gray-700 transition" />
           </a>
         </div>
@@ -73,7 +103,10 @@ export default function Navbar() {
               className={`text-black text-lg font-semibold hover:underline transition transform opacity-0 ${
                 menuOpen ? "animate-fadeSlideIn" : ""
               }`}
-              style={{ animationDelay: `${i * 100 + 200}ms`, animationFillMode: "forwards" }}
+              style={{
+                animationDelay: `${i * 100 + 200}ms`,
+                animationFillMode: "forwards",
+              }}
               onClick={() => setMenuOpen(false)}
             >
               {item}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import right_arrow from "../../assets/right_arrow.png";
-import faq_blackline1 from "../../assets/faq_blackline1.png";
-import faq_blackline2 from "../../assets/faq_blackline2.png";
-import faq_blackline3 from "../../assets/faq_blackline3.png";
-import faq_greenline1 from "../../assets/faq_greenline1.png";
-import faq_greenline2 from "../../assets/faq_greenline2.png";
-import faq_greenline3 from "../../assets/faq_greenline3.png";
+import right_arrow from "../../assets/HomeAssets/FAQ/right_arrow.png";
+import faq_blackline1 from "../../assets/HomeAssets/FAQ/faq_blackline1.png";
+import faq_blackline2 from "../../assets/HomeAssets/FAQ/faq_blackline2.png";
+import faq_blackline3 from "../../assets/HomeAssets/FAQ/faq_blackline3.png";
+import faq_greenline1 from "../../assets/HomeAssets/FAQ/faq_greenline1.png";
+import faq_greenline2 from "../../assets/HomeAssets/FAQ/faq_greenline2.png";
+import faq_greenline3 from "../../assets/HomeAssets/FAQ/faq_greenline3.png";
 const tabs = ["Design", "Development", "Deployment", "Maintenance"];
 
 const data = [
