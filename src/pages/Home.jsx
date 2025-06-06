@@ -7,6 +7,7 @@ import bg from "../assets/bg.jpg"
 import Footer from "@/components/HomeComponents/Footer";
 import FAQ from "@/components/Faq/Faq";
 import LandingsectionImage from "@/components/HomeComponents/LandingsectionImage/LandingsectionImage";
+import BrandMarquee from "@/components/HomeComponents/Marquee/Marquee";
 
 const Home = () => {
  
@@ -20,6 +21,7 @@ const Home = () => {
       <Navbar />
       <Landingpage />
       <LandingsectionImage/>
+      <BrandMarquee/>
       <HowItWork />
       <TakeALook />
       <FAQ/>
