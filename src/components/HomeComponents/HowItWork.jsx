@@ -39,7 +39,7 @@ const steps = [
 
 export default function HowItWork() {
   return (
-    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4 border">
+    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4 ">
       <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
         How It <span className="text-[#b9f33f]">Works</span>
       </h2>
@@ -53,7 +53,7 @@ export default function HowItWork() {
         >
           <div className={`md:w-1/3 mb-6 md:mb-0 flex 
             ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}
-           items-center border border-red-500`}>
+           items-center`}>
             <div className="relative inline-block">
               <div className="absolute top-2 left-2 w-full h-full rounded-lg bg-[#b9f33f] z-0 border border-gray-400"></div>
 
@@ -66,7 +66,7 @@ export default function HowItWork() {
           </div>
 
             
-          <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start border border-blue-500">
+          <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start">
             <span className="inline-block w-fit bg-[#b9f33f] text-black px-5 py-2 md:px-10 md:py-3 rounded-full text-md font-semibold mb-2 ">
               {step.stepLabel}
             </span>
