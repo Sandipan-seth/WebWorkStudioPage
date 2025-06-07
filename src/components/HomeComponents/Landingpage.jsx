@@ -33,10 +33,10 @@ function Landingpage() {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto justify-center items-center">
-        <div className="bg-black text-white rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
+        <div className="bg-black cursor-pointer text-white rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
           Book a Call
         </div>
-        <div className="bg-[#B9F33F] text-black rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
+        <div className="bg-[#B9F33F] cursor-pointer text-black rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
           Explore Service
         </div>
       </div>
