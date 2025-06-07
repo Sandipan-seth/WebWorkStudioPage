@@ -51,7 +51,7 @@ export default function HowItWork() {
             index % 2 === 0 ? "md:flex-row-reverse" : ""
           }`}
         >
-          <div className={`md:w-1/3 mb-6 md:mb-0 flex 
+          <div className={`md:w-1/3 mb-6 md:mb-0 flex justify-center 
             ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}
            items-center`}>
             <div className="relative inline-block">
