@@ -38,7 +38,7 @@ export default function TakeALook() {
         {steps.map((step, index) => (
           <div
             key={step.id}
-            className="relative items-center flex justify-center hover:scale-105 transition-transform duration-300"
+            className="relative items-center flex justify-center md:hover:scale-105 transition-transform duration-300"
           >
             <div className="w-full md:w-[80%] relative">
               <div className="absolute top-2 md:top-4 left-2 md:left-4 mx-auto w-full h-full rounded-xl bg-[#b9f33f] z-0"></div>
