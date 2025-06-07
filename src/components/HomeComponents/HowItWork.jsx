@@ -39,7 +39,7 @@ const steps = [
 
 export default function HowItWork() {
   return (
-    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4">
+    <div className="bg-white/50 py-16 max-w-7xl mx-auto px-4 border">
       <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
         How It <span className="text-[#b9f33f]">Works</span>
       </h2>
@@ -47,26 +47,26 @@ export default function HowItWork() {
       {steps.map((step, index) => (
         <div
           key={step.id}
-          className={`mb-12 flex flex-col md:flex-row items-stretch py-5 md:py-10 ${
+          className={`mb-12 flex flex-col justify-center md:flex-row items-stretch py-5 md:py-10 ${
             index % 2 === 0 ? "md:flex-row-reverse" : ""
           }`}
         >
-          
-          <div className="md:w-1/2 mb-6 md:mb-0 flex justify-center items-center ">
+          <div className={`md:w-1/3 mb-6 md:mb-0 flex 
+            ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}
+           items-center border border-red-500`}>
             <div className="relative inline-block">
               <div className="absolute top-2 left-2 w-full h-full rounded-lg bg-[#b9f33f] z-0 border border-gray-400"></div>
-
 
               <img
                 src={step.image}
                 alt={`Step ${step.id}`}
-                className="relative z-10 max-w-xs w-full h-auto rounded-lg border border-black"
+                className={`relative z-10 max-w-xs w-full h-auto rounded-lg border border-black`}
               />
             </div>
           </div>
 
-          
-          <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start">
+            
+          <div className="md:w-1/2 md:px-8 text-center md:text-left flex flex-col justify-center md:gap-10 items-center md:items-start border border-blue-500">
             <span className="inline-block w-fit bg-[#b9f33f] text-black px-5 py-2 md:px-10 md:py-3 rounded-full text-md font-semibold mb-2 ">
               {step.stepLabel}
             </span>
