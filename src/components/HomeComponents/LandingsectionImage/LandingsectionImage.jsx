@@ -8,8 +8,8 @@ function LandingsectionImage() {
   const images = [design1, design2, design3, design4, design5];
 
   return (
-    <div className="relative w-full h-80 overflow-hidden bg-white">
-      <div className="flex items-center justify-center h-full w-full gap-8 px-36 relative z-10">
+    <div className="relative w-full h-64 md:h-80 overflow-hidden bg-white">
+      <div className="hidden md:flex items-center justify-center h-full w-full gap-8 px-36 relative z-10">
         {images.map((src, index) => (
           <img
             key={index}
@@ -21,8 +21,18 @@ function LandingsectionImage() {
           />
         ))}
       </div>
-      <div className="absolute left-0 top-0 h-full w-40 bg-white/95 blur-[50px] z-30 pointer-events-none" />
-      <div className="absolute right-0 top-0 h-full w-40 bg-white/95 blur-[50px] z-30 pointer-events-none" />
+      <div className="md:hidden flex h-full gap-4 overflow-x-auto px-6 relative z-10 scrollbar-hide">
+        {images.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt=""
+            className="h-52 w-40 rounded-xl object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
+      <div className="absolute left-0 top-0 h-full w-20 bg-white/95 blur-[40px] z-30 pointer-events-none" />
+      <div className="absolute right-0 top-0 h-full w-20 bg-white/95 blur-[40px] z-30 pointer-events-none" />
     </div>
   );
 }

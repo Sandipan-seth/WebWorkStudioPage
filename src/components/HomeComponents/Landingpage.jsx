@@ -13,8 +13,8 @@ function Landingpage() {
   ];
 
   return (
-    <div className="flex flex-col mx-auto max-w-7xl justify-center items-center min-h-screen bg-white/60 text-black px-4 sm:px-6 text-center pt-12 pb-16">
-      <div className="mb-5">
+    <div className="flex flex-col mx-auto max-w-7xl justify-center items-center h-auto bg-white/60 text-black px-4 sm:px-6 text-center pt-12 pb-16">
+      <div className="mb-5 mt-20">
         <AnimatedShinyTextDemo />
       </div>
 
