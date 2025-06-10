@@ -97,7 +97,7 @@ export default function Navbar() {
 
         <nav className="flex flex-col gap-6">
           {details.map((item, i) => (
-            <a
+            <div
               key={i}
               href={`#${item.toLowerCase().replace(/\s/g, "")}`}
               className={`text-black text-lg font-semibold hover:underline transition transform opacity-0 ${
@@ -117,7 +117,7 @@ export default function Navbar() {
               }}
             >
               {item}
-            </a>
+            </div>
           ))}
         </nav>
 
