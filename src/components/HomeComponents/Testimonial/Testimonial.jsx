@@ -32,6 +32,8 @@ const testimonials = [
     },
 ];
 
+// Imports remain unchanged
+
 const Testimonial = () => {
     const settings = {
         dots: true,
@@ -44,11 +46,11 @@ const Testimonial = () => {
         arrows: false,
         appendDots: dots => (
             <div className="mt-2 mb-2">
-                <ul className="flex justify-center gap-3"> {dots} </ul>
+                <ul className="flex justify-center gap-2 sm:gap-3"> {dots} </ul>
             </div>
         ),
         customPaging: i => (
-            <div className="dot w-4 h-4 rounded-full border border-black mt-4"></div>
+            <div className="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full border border-black mt-4"></div>
         )
     };
 
@@ -56,25 +58,25 @@ const Testimonial = () => {
         <div className="w-full max-w-7xl mx-auto px-4 mt-14 text-center">
             {/* Heading */}
             <div className="relative flex justify-center items-center mt-2 mb-2">
-                <div className="flex items-center absolute left-[302px] top-[-5px] gap-1">
-                    <img src={faq_blackline1} alt="Black Line 1" className="relative h-6 translate-x-[43px] translate-y-[-24px]" />
-                    <img src={faq_blackline2} alt="Black Line 2" className="relative h-6 translate-x-[5px] translate-y-[-16px]" />
-                    <img src={faq_blackline3} alt="Black Line 3" className="relative object-contain w-8 h-6 translate-x-[-34px]" />
+                <div className="sm:flex items-center absolute left-[181px] top-[-11px] sm:left-[302px] sm:top-[-5px] gap-1">
+                    <img src={faq_blackline1} alt="Black Line 1" className="relative h-3 translate-x-[-115px] translate-y-[-5px] sm:h-6 sm:translate-x-[43px] sm:translate-y-[-24px]" />
+                    <img src={faq_blackline2} alt="Black Line 2" className="relative h-3 translate-x-[-128px] translate-y-[-12px] sm:h-6 sm:translate-x-[5px] sm:translate-y-[-16px]" />
+                    <img src={faq_blackline3} alt="Black Line 3" className="relative object-contain h-3 w-4 translate-x-[-136px] translate-y-[-13px] sm:translate-y-[0px] sm:w-8 sm:h-6 sm:translate-x-[-34px]" />
                 </div>
 
-                <h2 className="text-6xl font-aeonik font-bold mb-0">
+                <h2 className="text-2xl sm:text-6xl font-aeonik font-bold mb-0">
                     Words That <span className="text-lime-400">Inspire</span>
                 </h2>
 
-                <div className="flex items-center absolute top-[1px] right-[408px] gap-1">
-                    <img src={faq_greenline1} alt="Green Line 1" className="relative h-6 translate-x-[120px] translate-y-[-24px]" />
-                    <img src={faq_greenline2} alt="Green Line 2" className="relative object-contain w-8 h-6 translate-x-[114px] translate-y-[-18px]" />
-                    <img src={faq_greenline3} alt="Green Line 3" className="relative object-contain w-8 h-6 translate-x-[90px] translate-y-[-2px]" />
+                <div className="sm:flex items-center absolute top-[-15px] right-[175px] sm:top-[1px] sm:right-[408px] gap-1">
+                    <img src={faq_greenline1} alt="Green Line 1" className="relative h-4 translate-x-[118px] sm:h-6 sm:translate-x-[120px] sm:translate-y-[-24px]" />
+                    <img src={faq_greenline2} alt="Green Line 2" className="relative object-contain h-3 w-4 translate-x-[124px] translate-y-[-9px] sm:w-8 sm:h-6 sm:translate-x-[114px] sm:translate-y-[-18px]" />
+                    <img src={faq_greenline3} alt="Green Line 3" className="relative object-contain h-3 w-4 translate-x-[128px] translate-y-[-10px] sm:w-8 sm:h-6 sm:translate-x-[90px] sm:translate-y-[-2px]" />
                 </div>
             </div>
 
             {/* Quote Icon */}
-            <img src={quote_icon} alt="Quote" className="mx-auto w-10 mb-6 mt-12" />
+            <img src={quote_icon} alt="Quote" className="mx-auto w-9 sm:w-10 mb-6 mt-10" />
 
             {/* Testimonial Slider */}
             <Slider {...settings} className="testimonial-slider">
@@ -82,15 +84,15 @@ const Testimonial = () => {
                     <div key={index} className="px-2">
                         <div className="p-2 flex justify-center">
                             <div className="flex flex-col h-full items-center text-center space-y-4">
-                                <img src={testimonial.logo} alt="Logo" className="mx-auto w-28 h-28 mb-4" />
-                                <p className=" font-aeonik text-black text-[25px] leading-tight flex-1 px-12">
+                                <img src={testimonial.logo} alt="Logo" className="mx-auto w-20 h-20 sm:w-28 sm:h-28 mb-4" />
+                                <p className="font-aeonik text-black text-sm sm:text-[25px] leading-normal sm:leading-tight px-4 sm:px-12">
                                     {testimonial.text}
                                 </p>
                                 <div>
-                                    <h4 className="text-black font-aeonik font-semibold text-3xl mt-6">
+                                    <h4 className="text-black font-aeonik font-semibold text-lg sm:text-3xl mt-4">
                                         {testimonial.name}
                                     </h4>
-                                    <p className="font-aeonik text-black text-md">{testimonial.title}</p>
+                                    <p className="font-aeonik text-black text-sm sm:text-md">{testimonial.title}</p>
                                 </div>
                             </div>
                         </div>
@@ -104,9 +106,6 @@ const Testimonial = () => {
           .testimonial-slider .slick-dots li .dot {
             background: white;
             border: 1px solid black;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
           }
 
           .testimonial-slider .slick-dots li.slick-active .dot {
@@ -117,5 +116,4 @@ const Testimonial = () => {
         </div>
     );
 };
-
 export default Testimonial;
