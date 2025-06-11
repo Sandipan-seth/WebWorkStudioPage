@@ -22,7 +22,7 @@ const Form = () => {
         </div>
 
         {/* Form */}
-        <form className="space-y-5 md:space-y-7">
+        <form className="space-y-5 md:space-y-7 px-3 md:px-20">
           <div>
             <label className="block text-md md:text-xl font-medium text-gray-700 mb-1">
               Your Name
