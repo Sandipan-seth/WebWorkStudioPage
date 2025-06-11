@@ -3,7 +3,7 @@ import officeimg from "../../assets/AboutAssets/image1.png";
 import icon1 from '../../assets/AboutAssets/icon1.png';
 import icon2 from '../../assets/AboutAssets/icon2.png';
 import icon3 from '../../assets/AboutAssets/icon3.png';
-import quote_icon from "../../assets/vector.png";
+import quote_icon from "../../assets/Vector.png";
 import faq_blackline1 from "../../assets/HomeAssets/FAQ/faq_blackline1.png";
 import faq_blackline2 from "../../assets/HomeAssets/FAQ/faq_blackline2.png";
 import faq_blackline3 from "../../assets/HomeAssets/FAQ/faq_blackline3.png";

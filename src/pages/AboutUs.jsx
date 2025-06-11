@@ -4,6 +4,7 @@ import bg from "../assets/bg.jpg";
 import WhoAreWe from "@/components/Whoarewe/WhoAreWe";
 import Step1 from "../assets/HomeAssets/HowItWork/Step1.png";
 import Step2 from "../assets/HomeAssets/HowItWork/Step2.png";
+import { useEffect } from "react";
 const steps = [
   {
     id: 1,
@@ -32,14 +33,19 @@ const steps = [
 ];
 
 function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const bgStyle = {
     backgroundImage: `url(${bg})`,
   };
   return (
-    <>
-      <div className="w-full min-h-screen bg-white relative" style={bgStyle}>
+    <div style={bgStyle}>
+      <div
+        className="max-w-7xl mx-auto w-full min-h-screen bg-white/50 relative"
+      >
         <Navbar />
-        <WhoAreWe/>
+        <WhoAreWe />
         <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
           How It <span className="text-[#b9f33f]">Works</span>
         </h2>
@@ -80,10 +86,10 @@ function AboutUs() {
             </div>
           </div>
         ))}
-        
+
         <LowerFooter />
       </div>
-    </>
+    </div>
   );
 }
 
