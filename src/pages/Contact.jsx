@@ -1,10 +1,15 @@
 import LowerFooter from '@/components/HomeComponents/FooterComponent/LowerFooter'
 import Navbar from '@/components/Navbar/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import bg from '../assets/bg.jpg'
 import Form from '@/components/ContactComponents/Form'
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   const bgStyle = {
     backgroundImage: `url(${bg})`,
   };
