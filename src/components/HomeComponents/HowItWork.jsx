@@ -54,7 +54,7 @@ export default function HowItWork() {
           <div className={`md:w-1/3 mb-6 md:mb-0 flex justify-center 
             ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}
            items-center`}>
-            <div className="relative inline-block">
+            <div className="relative inline-block w-2/3">
               <div className="absolute top-2 left-2 w-full h-full rounded-lg bg-[#b9f33f] z-0 border border-gray-400"></div>
 
               <img
