@@ -6,6 +6,7 @@ import Step1 from "../assets/HomeAssets/HowItWork/Step1.png";
 import Step2 from "../assets/HomeAssets/HowItWork/Step2.png";
 import { useEffect } from "react";
 import AboutComponent from "@/components/AboutComponents/AboutComponent";
+import Team from "@/components/AboutComponents/Team";
 const steps = [
   {
     id: 1,
@@ -52,6 +53,7 @@ function AboutUs() {
         </h2>
 
         <AboutComponent/>
+        <Team/>
 
         <LowerFooter />
       </div>
