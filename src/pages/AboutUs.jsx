@@ -7,6 +7,7 @@ import Step2 from "../assets/HomeAssets/HowItWork/Step2.png";
 import { useEffect } from "react";
 import AboutComponent from "@/components/AboutComponents/AboutComponent";
 import Team from "@/components/AboutComponents/Team";
+import Footer from "@/components/HomeComponents/Footer";
 const steps = [
   {
     id: 1,
@@ -43,20 +44,17 @@ function AboutUs() {
   };
   return (
     <div style={bgStyle}>
-      <div
-        className="max-w-7xl mx-auto w-full min-h-screen bg-white/50 relative"
-      >
+      <div className="max-w-7xl mx-auto w-full min-h-screen bg-white/50 relative">
         <Navbar />
         <WhoAreWe />
         <h2 className="text-5xl md:text-7xl font-bold text-center mb-20">
           Our <span className="text-[#b9f33f]">Mission</span>
         </h2>
 
-        <AboutComponent/>
-        <Team/>
-
-        <LowerFooter />
+        <AboutComponent />
+        <Team />
       </div>
+      <Footer />
     </div>
   );
 }
