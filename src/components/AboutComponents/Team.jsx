@@ -58,7 +58,7 @@ function Team() {
   return (
     <div className="py-20 px-6 md:px-20 bg-white">
       <h2 className="text-4xl md:text-6xl font-bold text-center text-black mb-12">
-        Meet Our Team
+        Meet Our <span className="text-[#b9f33f]">Team</span>
       </h2>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {team.map((member, index) => (
