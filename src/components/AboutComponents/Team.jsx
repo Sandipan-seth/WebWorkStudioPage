@@ -1,10 +1,22 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"; // Changed FaTwitter to FaInstagram
 import Rupam from "../../assets/Team/Rupam.jpg";
 import Sandipan from "../../assets/Team/Sandipan.png";
 
 function Team() {
   const team = [
+    {
+      name: "Rupam Mondal",
+      role: "Full Stack Developer",
+      description:
+        "Full stack developer passionate about building seamless, fast, and responsive web applications. Always exploring the latest in tech.",
+      image: Rupam,
+      socials: {
+        linkedin: "https://www.linkedin.com/in/rupam-mondal",
+        github: "https://github.com/rupammondal",
+        instagram: "https://www.instagram.com/studiowebworks/?hl=en", // unified link
+      },
+    },
     {
       name: "Sandipan Seth",
       role: "Full Stack Developer",
@@ -14,7 +26,7 @@ function Team() {
       socials: {
         linkedin: "https://www.linkedin.com/in/sandiopan-seth",
         github: "https://github.com/Sandipan-seth",
-        twitter: "https://twitter.com/sandiopan",
+        instagram: "https://www.instagram.com/studiowebworks/?hl=en",
       },
     },
     {
@@ -26,7 +38,7 @@ function Team() {
       socials: {
         linkedin: "https://www.linkedin.com/in/sohom-das",
         github: "https://github.com/sohomdas",
-        twitter: "https://twitter.com/sohomdas",
+        instagram: "https://www.instagram.com/studiowebworks/?hl=en",
       },
     },
     {
@@ -38,19 +50,7 @@ function Team() {
       socials: {
         linkedin: "https://www.linkedin.com/in/debdeep-guga",
         github: "https://github.com/debdeepguga",
-        twitter: "https://twitter.com/debdeepguga",
-      },
-    },
-    {
-      name: "Rupam Mondal",
-      role: "Full Stack Developer",
-      description:
-        "Full stack developer passionate about building seamless, fast, and responsive web applications. Always exploring the latest in tech.",
-      image: Rupam,
-      socials: {
-        linkedin: "https://www.linkedin.com/in/rupam-mondal",
-        github: "https://github.com/rupammondal",
-        twitter: "https://twitter.com/rupammondal",
+        instagram: "https://www.instagram.com/studiowebworks/?hl=en",
       },
     },
   ];
@@ -97,12 +97,12 @@ function Team() {
                   <FaGithub size={20} />
                 </a>
                 <a
-                  href={member.socials.twitter}
+                  href={member.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-600 transition-colors"
                 >
-                  <FaTwitter size={20} />
+                  <FaInstagram size={20} />
                 </a>
               </div>
             </div>

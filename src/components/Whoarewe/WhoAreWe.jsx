@@ -60,12 +60,12 @@ const WhoAreWe = () => {
                 </div>
                 <div className='space-y-2'>
                     <img src={icon2} alt="Courses Icon" className="mx-auto md:w-16 w-12 mb-2" />
-                    <p className="md:text-3xl text-md font-bold font-poppins text-[#141219]">5K+</p>
-                    <p className="md:text-lg text-sm text-[#141219] font-semibold font-poppins">Courses <br />Available</p>
+                    <p className="md:text-3xl text-md font-bold font-poppins text-[#141219]">12+</p>
+                    <p className="md:text-lg text-sm text-[#141219] font-semibold font-poppins">Services <br />Available</p>
                 </div>
                 <div className='space-y-2'>
                     <img src={icon3} alt="Clients Icon" className="mx-auto md:w-16 w-12 mb-2" />
-                    <p className="md:text-3xl text-md font-poppins font-bold text-[#141219]">2.5K+</p>
+                    <p className="md:text-3xl text-md font-poppins font-bold text-[#141219]">8+</p>
                     <p className="md:text-lg text-sm text-[#141219] font-semibold font-poppins">Clients <br />Served</p>
                 </div>
             </div>
