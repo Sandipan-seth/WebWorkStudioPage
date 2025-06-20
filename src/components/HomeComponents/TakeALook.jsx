@@ -2,29 +2,32 @@ import React from "react";
 import AV from "../../assets/HomeAssets/LookWebSites/AV.png";
 import GP from "../../assets/HomeAssets/LookWebSites/GP.png";
 import TF from "../../assets/HomeAssets/LookWebSites/TF.png";
-import { ArrowUpRight } from "lucide-react"; // Optional: install lucide-react or replace with any icon
+import { ArrowUpRight } from "lucide-react";
 
 const steps = [
   {
     id: 1,
     title: "AV Design",
     description:
-      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
+      "A modern portfolio website tailored for a visual design studio, featuring elegant UI, project showcases, and seamless user interactions to highlight creative works.",
     image: AV,
+    link: "https://www.av-design.in/",
   },
   {
     id: 2,
-    title: "Gram Panchayat",
+    title: "Manpasand",
     description:
-      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
-    image: GP,
+      "An intuitive website developed for a local food brand, offering a visually engaging interface to explore and learn more about the brand’s unique offerings.",
+    image: TF,
+    link: "https://manpasand.us/",
   },
   {
     id: 3,
-    title: "TF Cakes",
+    title: "Gram Panchayat",
     description:
-      "We are specialized in designing apps and websites and products for industry purpose and well bell and well of a consulting makes things look do in that particular arena .",
-    image: TF,
+      "A community-focused portal built for local governance, enabling villagers to access schemes, submit grievances, and stay updated on Gram Panchayat activities.",
+    image: GP,
+    link: "https://yourdomain.com/gram-panchayat",
   },
 ];
 
@@ -45,9 +48,9 @@ export default function TakeALook() {
 
               <div
                 className={`relative border mx-auto border-black rounded-xl w-full py-6 px-4 md:min-h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white z-10 
-        ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+                ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
               >
-                <div className="w-full md:w-1/3 flex justify-center items-center ">
+                <div className="w-full md:w-1/3 flex justify-center items-center">
                   <img
                     src={step.image}
                     alt={step.title}
@@ -55,22 +58,28 @@ export default function TakeALook() {
                   />
                 </div>
 
-                <div className="w-full md:w-2/3 px-5 md:px-6 mt-6 md:mt-0 flex flex-col  items-start justify-center gap-5 ">
+                <div className="w-full md:w-2/3 px-5 md:px-6 mt-6 md:mt-0 flex flex-col items-start justify-center gap-5">
                   <h3 className="text-3xl md:text-5xl font-bold">
                     {step.title}
                   </h3>
                   <p className="text-gray-600 leading-tight text-base md:text-xl">
                     {step.description}
                   </p>
-                  <button className="bg-[#b9f33f] text-black px-5 py-2 rounded-full font-semibold flex items-center w-fit gap-2 hover:bg-lime-400 transition">
+                  <a
+                    href={step.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#b9f33f] text-black px-5 py-2 rounded-full font-semibold flex items-center w-fit gap-2 hover:bg-lime-400 transition"
+                  >
                     View Project <ArrowUpRight size={18} className="inline" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+
       <div className="text-center mt-10">
         <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition">
           View All Projects

@@ -11,7 +11,7 @@ function BrandMarquee() {
 
   return (
     <div className="w-full py-10 px-6 md:px-20 mt-12 flex flex-col gap-12">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-center mb-8">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-8">
         Our Valued <span className="text-[#B9F33F] font-bold">Clients</span>
       </h2>
       <Marquee gradient={false} speed={60} pauseOnHover={true}>

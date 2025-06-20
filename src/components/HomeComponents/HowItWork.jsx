@@ -7,7 +7,7 @@ const steps = [
     id: 1,
     title: "Understanding The Problem",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "We start by deeply analyzing the client's needs, industry trends, and user challenges to define a clear and actionable problem statement.",
     stepLabel: "First Step",
     image: Step1,
   },
@@ -15,7 +15,7 @@ const steps = [
     id: 2,
     title: "Designing The Solution",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "Our design team crafts intuitive user experiences and modern interfaces that align with the brand’s identity and target audience expectations.",
     stepLabel: "Second Step",
     image: Step2,
   },
@@ -23,7 +23,7 @@ const steps = [
     id: 3,
     title: "Developing The Website",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "Using the latest technologies, our developers turn wireframes into high-performance, scalable, and secure applications ready for real-world use.",
     stepLabel: "Third Step",
     image: Step1,
   },
@@ -31,11 +31,12 @@ const steps = [
     id: 4,
     title: "Deploying The Website",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "After thorough testing, we launch the product to production servers, ensuring everything runs smoothly with ongoing monitoring and support.",
     stepLabel: "Fourth Step",
     image: Step2,
   },
 ];
+
 
 export default function HowItWork() {
   return (

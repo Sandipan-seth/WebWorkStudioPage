@@ -2,11 +2,11 @@ import { useState } from "react";
 import Logo from "../../assets/Logo.png";
 import {
   FaLinkedin,
-  FaGithub,
-  FaTwitter,
+  FaInstagram,
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex gap-6 text-black text-3xl">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/webworks-studio3/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -49,20 +49,20 @@ export default function Navbar() {
             <FaLinkedin className="hover:text-gray-700 transition" />
           </a>
           <a
-            href="https://github.com"
+            href="https://www.instagram.com/studiowebworks/?next=%2F&hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Instagram"
           >
-            <FaGithub className="hover:text-gray-700 transition" />
+            <FaInstagram className="hover:text-gray-700 transition" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/webw0rkStudio"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
+            aria-label="X (Twitter)"
           >
-            <FaTwitter className="hover:text-gray-700 transition" />
+            <X className="hover:text-gray-700 transition" size={28} />
           </a>
         </div>
 
@@ -99,7 +99,6 @@ export default function Navbar() {
           {details.map((item, i) => (
             <div
               key={i}
-              href={`#${item.toLowerCase().replace(/\s/g, "")}`}
               className={`text-black text-lg font-semibold hover:underline transition transform opacity-0 ${
                 menuOpen ? "animate-fadeSlideIn" : ""
               }`}
@@ -122,19 +121,29 @@ export default function Navbar() {
         </nav>
 
         <div className="mt-auto flex gap-6 text-black text-3xl">
-          {[FaLinkedin, FaGithub, FaTwitter].map((Icon, i) => (
+          {[
+            {
+              Icon: FaLinkedin,
+              href: "https://www.linkedin.com/company/webworks-studio3/?viewAsMember=true",
+              label: "LinkedIn",
+            },
+            {
+              Icon: FaInstagram,
+              href: "https://www.instagram.com/studiowebworks/?next=%2F&hl=en",
+              label: "Instagram",
+            },
+            {
+              Icon: X,
+              href: "https://x.com/webw0rkStudio",
+              label: "X (Twitter)",
+            },
+          ].map(({ Icon, href, label }, i) => (
             <a
               key={i}
-              href={
-                i === 0
-                  ? "https://linkedin.com"
-                  : i === 1
-                  ? "https://github.com"
-                  : "https://twitter.com"
-              }
+              href={href}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={i === 0 ? "LinkedIn" : i === 1 ? "GitHub" : "Twitter"}
+              aria-label={label}
               className={`opacity-0 transform ${
                 menuOpen ? "animate-fadeSlideIn" : ""
               }`}
@@ -143,7 +152,7 @@ export default function Navbar() {
                 animationFillMode: "forwards",
               }}
             >
-              <Icon className="hover:text-gray-700 transition" />
+              <Icon className="hover:text-gray-700 transition" size={28} />
             </a>
           ))}
         </div>

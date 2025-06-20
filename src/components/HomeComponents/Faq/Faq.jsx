@@ -7,8 +7,6 @@ import faq_greenline1 from "../../../assets/HomeAssets/FAQ/faq_greenline1.png";
 import faq_greenline2 from "../../../assets/HomeAssets/FAQ/faq_greenline2.png";
 import faq_greenline3 from "../../../assets/HomeAssets/FAQ/faq_greenline3.png";
 
-const tabs = ["Design", "Development", "Deployment", "Maintenance"];
-
 const faqData = [
   {
     question: "Is my data secure?",
@@ -30,7 +28,6 @@ const faqData = [
     answer:
       "Yes, a refund is available before the confirmation of the design. However, once the development (coding) phase begins, no refund is applicable.",
   },
-
   {
     question: "How do I contact support?",
     answer:
@@ -44,7 +41,6 @@ const faqData = [
 ];
 
 const FAQ = () => {
-  const [activeTab, setActiveTab] = useState(0);
   const [openIndex, setOpenIndex] = useState(-1);
   const answerRefs = useRef([]);
 
@@ -96,26 +92,7 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#B9F33F] rounded-full mx-auto p-0 sm:p-1 mb-16 sm:mb-20 overflow-hidden w-[90%] max-w-[400px] sm:w-full sm:max-w-[968px] px-2 sm:px-0">
-        <div
-          className="absolute top-0 left-0 h-full w-1/4 bg-black rounded-full transition-transform duration-300"
-          style={{ transform: `translateX(${activeTab * 100}%)` }}
-        ></div>
-        <div className="relative z-10 grid grid-cols-4 sm:gap-0 gap-3">
-          {tabs.map((tab, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`text-center py-2 px-0 sm:px-4 rounded-full font-poppins font-semibold text-[10px] sm:text-lg transition-all duration-200 sm:w-full ${
-                activeTab === index ? "text-white" : "text-black"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </div>
-
+      {/* FAQ Section */}
       <div className="space-y-6 sm:space-y-6">
         {faqData.map(({ question, answer }, index) => {
           const isOpen = openIndex === index;
