@@ -1,47 +1,47 @@
-import React from 'react'
+import React from "react";
 import Step1 from "../../assets/ServiceAssets/Step1.png";
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from "lucide-react";
 
 const ServiceBody = () => {
+  const steps = [
+    {
+      id: 1,
+      title: "UI/UX Designing",
+      description:
+        "We craft intuitive and visually appealing user interfaces for web and mobile platforms. Our design process focuses on user experience, accessibility, and modern design principles to ensure maximum engagement.",
+      label: "Designing",
+      image: Step1,
+      price: "Starting at ₹2999",
+    },
+    {
+      id: 2,
+      title: "Website Building",
+      description:
+        "We build responsive, fast, and scalable websites tailored to your business needs. From landing pages to full-scale web applications, our development ensures top performance and cross-device compatibility.",
+      label: "Development",
+      image: Step1,
+      price: "Starting at ₹7999",
+    },
+    {
+      id: 3,
+      title: "Maintenance & Deployment",
+      description:
+        "We handle everything from website updates and bug fixes to server deployment and monitoring. Keep your application running smoothly with our reliable maintenance and support services.",
+      label: "Maintenance",
+      image: Step1,
+      price: "Starting at ₹1999",
+    },
+    {
+      id: 4,
+      title: "Search Engine Optimization",
+      description:
+        "We optimize your website to improve visibility on search engines. Our SEO services include keyword research, on-page optimization, and performance tuning to help drive organic traffic.",
+      label: "SEO",
+      image: Step1,
+      price: "Starting at ₹7999",
+    },
+  ];
 
-    const steps = [
-      {
-        id: 1,
-        title: "UI/UX Designing",
-        description:
-          "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
-        label: "Designing",
-        image: Step1,
-        price: "Starting at ₹2999"
-      },
-      {
-        id: 2,
-        title: "Website building",
-        description:
-          "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
-        label: "Development",
-        image: Step1,
-        price: "Starting at ₹7999"
-      },
-      {
-        id: 3,
-        title: "Maintenance & Deployment",
-        description:
-          "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
-        label: "Maintenance",
-        image: Step1,
-        price: "Starting at ₹1999"
-      },
-      {
-        id: 4,
-        title: "Search Engine Optimization",
-        description:
-          "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
-        label: "SEO",
-        image: Step1,
-        price: "Starting at ₹7999"
-      }
-    ];
   return (
     <div className="min-h-screen flex items-center justify-center bg-white/50 py-16 max-w-7xl mx-auto px-4 mt-5 md:mt-10">
       <div className="w-full">
@@ -92,6 +92,6 @@ const ServiceBody = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ServiceBody
+export default ServiceBody;
