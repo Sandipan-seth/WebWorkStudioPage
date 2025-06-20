@@ -6,95 +6,94 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const LowerFooter = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white">
       <div className="bg-white text-black px-6 py-10 flex flex-col max-w-7xl mx-auto">
-        {/* logo */}
-        <div className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="w-22 h-auto mb-4 md:mb-0" />
+        {/* Logo */}
+        <div className="flex-shrink-0 mb-6">
+          <img src={logo} alt="Logo" className="w-28 h-auto" />
         </div>
 
-        <div className="flex flex-row flex-wrap md:flex-row md:justify-between md:items-start max-w-7xl mx-auto w-full gap-10">
-          {/* Practice */}
-          <div className="flex flex-col">
-            <h3 className="mb-2 text-xl font-bold">Practice</h3>
+        {/* Main Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* Company Links */}
+          <div>
+            <h3 className="mb-3 text-xl font-bold">Company</h3>
             <ul className="space-y-2 text-md">
-              <li>AI Interview Bot</li>
-              <li>Versant Test</li>
-              <li>Aptitude Test</li>
-              <li>Technical Test</li>
-              <li>Typing Test</li>
+              <li className="hover:underline cursor-pointer"
+                onClick={() => {
+                  navigate('/about-us')
+                }}
+              >About Us</li>
+              <li className="hover:underline cursor-pointer"
+                onClick={() => {
+                  navigate('/services')
+                }}
+              >Services</li>
+              
+              <li className="hover:underline cursor-pointer"
+                onClick={() => {
+                  navigate('/contact-us')
+                }}
+              >Contact</li>
             </ul>
           </div>
 
-          {/* Tools */}
-          <div className="flex flex-col">
-            <h3 className="text-xl font-bold mb-2">Tools</h3>
+          {/* Legal */}
+          <div>
+            <h3 className="text-xl font-bold mb-3">Legal</h3>
             <ul className="space-y-2 text-md">
-              <li>Resume Scorer</li>
-              <li>Articleship Scorer</li>
-              <li>Salary Estimator</li>
+              <li className="hover:underline cursor-pointer">Privacy Policy</li>
+              <li className="hover:underline cursor-pointer">
+                Terms & Conditions
+              </li>
+              <li className="hover:underline cursor-pointer">Refund Policy</li>
+              <li className="hover:underline cursor-pointer">Cookie Policy</li>
             </ul>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-col">
-            <h3 className="text-xl font-bold mb-2">Links</h3>
-            <ul className="space-y-2 text-md">
-              <li>Privacy Policy</li>
-              <li>Terms and Conditions</li>
-              <li>Refund Policy</li>
-              <li>Cookie Policy</li>
+          {/* Contact Info */}
+          <div>
+            <h3 className="font-bold text-xl mb-3">Contact</h3>
+            <p className="text-sm font-medium">Call us:</p>
+            <ul className="text-sm space-y-1 mb-3">
+              <li>+91 9339388730</li>
+              <li>+91 9051819976</li>
+              <li>+91 8910647915</li>
+              <li>+91 7044924558</li>
             </ul>
+            <p className="text-sm font-medium">Email us:</p>
+            <p className="text-sm hover:underline">
+              webworksstudio986@gmail.com
+            </p>
           </div>
 
-          <div className="flex flex-col gap-4 w-full justify-center items-center md:w-auto">
-            <div>
-              <h3 className="font-bold text-xl mb-5">Newsletter</h3>
-              <div className="flex items-center border border-black rounded-full px-3 py-1">
-                <span className="text-xl mr-2">@</span>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-grow bg-transparent outline-none text-sm"
-                />
-                <button className="bg-lime-400 text-black font-semibold px-4 py-1 rounded-full ml-2">
-                  Join
-                </button>
-              </div>
-            </div>
-
-            <div className="flex gap-10 mt-5">
-              <div>
-                <strong className="text-xl">Call us</strong>
-                <br />
-                <a
-                  href="tel:+919022720882"
-                  className="hover:underline text-sm "
-                >
-                  +91 9022720882
-                </a>
-              </div>
-
-              <div>
-                <strong className="text-xl">Email us</strong>
-                <br />
-                <a
-                  href="mailto:support@camonk.com"
-                  className="hover:underline text-sm"
-                >
-                  support@camonk.com
-                </a>
-              </div>
+          {/* Email Section */}
+          <div className="flex flex-col items-start text-left w-full max-w-xs">
+            <h3 className="font-bold text-xl mb-3">Send us email</h3>
+            <div className="flex items-center border border-black rounded-full px-3 py-1 w-full">
+              <span className="text-xl mr-2">@</span>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-grow bg-transparent outline-none text-sm"
+              />
+              <button className="bg-lime-400 text-black font-semibold px-4 py-1 rounded-full ml-2">
+                Send
+              </button>
             </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="mt-10 pt-4 border-t flex flex-col md:flex-row justify-between items-center text-sm w-full mx-auto">
-          <p>Copyright © CA MONK. All rights reserved</p>
+        {/* Bottom Bar */}
+        <div className="mt-10 pt-4 border-t flex flex-col md:flex-row justify-between items-center text-sm w-full">
+          <p>
+            © {new Date().getFullYear()} WebWorks Studio. All rights reserved.
+          </p>
           <div className="flex space-x-4 mt-2 md:mt-0 text-base cursor-pointer">
             <FaXTwitter size={24} />
             <FaFacebookF size={24} />

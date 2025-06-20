@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const details = ["Home", "About us", "Services", "Blogs", "Contact us"];
+  const details = ["Home", "About us", "Services",  "Contact us"];
   const navigate = useNavigate();
 
   return (
