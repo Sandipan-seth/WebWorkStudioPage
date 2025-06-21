@@ -13,8 +13,8 @@ function Team() {
         "Full stack developer passionate about building seamless, fast, and responsive web applications. Always exploring the latest in tech.",
       image: Rupam,
       socials: {
-        linkedin: "https://www.linkedin.com/in/rupam-mondal",
-        github: "https://github.com/rupammondal",
+        linkedin: "https://www.linkedin.com/in/rupam-mondal-37b653252/",
+        github: "https://github.com/Rupam-Mondal",
         instagram: "https://www.instagram.com/studiowebworks/?hl=en", // unified link
       },
     },
