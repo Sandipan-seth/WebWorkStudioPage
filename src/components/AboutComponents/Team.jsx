@@ -37,8 +37,8 @@ function Team() {
         "Creative designer passionate about intuitive interfaces and user-first design. Loves turning complex ideas into clean, usable designs.",
       image: Soham,
       socials: {
-        linkedin: "https://www.linkedin.com/in/sohom-das",
-        github: "https://github.com/sohomdas",
+        linkedin: "https://www.linkedin.com/in/sohom-das-245791267/",
+        github: "https://github.com/Sohom-Das2003?tab=repositories",
         instagram: "https://www.instagram.com/studiowebworks/?hl=en",
       },
     },
@@ -49,7 +49,7 @@ function Team() {
         "Frontend wizard with a knack for pixel-perfect designs and smooth user experiences. Obsessed with performance and UI polish.",
       image: Debdeep,
       socials: {
-        linkedin: "https://www.linkedin.com/in/debdeep-guga",
+        linkedin: "https://www.linkedin.com/in/debdeep-guha-43411b274/",
         github: "https://github.com/debdeepguga",
         instagram: "https://www.instagram.com/studiowebworks/?hl=en",
       },
