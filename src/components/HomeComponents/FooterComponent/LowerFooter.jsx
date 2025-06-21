@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 const LowerFooter = () => {
   const navigate = useNavigate();
   const [email, setEmail] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
 
   const submitEmail = async (e) => {
     e.preventDefault();
@@ -126,7 +127,9 @@ const LowerFooter = () => {
                   submitEmail(e);
                 }}
               >
-                Send
+                {
+                  loading ? "Sending..." : "Send"
+                }
               </button>
             </div>
           </div>
