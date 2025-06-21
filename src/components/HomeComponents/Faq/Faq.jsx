@@ -49,7 +49,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-2 sm:px-6 lg:px-16">
+    <div className="w-full max-w-7xl mx-auto py-10 px-2 sm:px-6 lg:px-16 bg-white/50">
       <div className="flex justify-center items-center gap-2 mb-6 sm:mb-10">
         <div className="relative flex justify-center items-center mt-2 mb-10">
           <div className="flex items-center absolute left-[-71px] top-[-4px] sm:left-[-60px] sm:top-[-12px] gap-1">

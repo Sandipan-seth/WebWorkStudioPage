@@ -55,7 +55,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="w-full max-w-7xl mx-auto px-4 mt-14 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 mt-14 text-center bg-white/50">
             {/* Heading */}
             <div className="relative flex justify-center items-center mt-2 mb-2">
                 <div className="sm:flex items-center absolute left-[160px] top-[-11px] sm:left-[302px] sm:top-[-5px] gap-1">
