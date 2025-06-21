@@ -131,9 +131,9 @@ const TakeALook = () => {
 
       {/* View All Projects Button */}
       <div className="text-center mt-14">
-        <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition">
+        {/* <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition">
           View All Projects
-        </button>
+        </button> */}
       </div>
     </div>
   );
