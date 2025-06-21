@@ -2,8 +2,10 @@ import React from "react";
 import h from "../../../assets/HomeAssets/Footer/H.png";
 import FooterBg from "../../../assets/HomeAssets/Footer/FooterBg.jpg";
 import EllipseMob from "../../../assets/HomeAssets/Footer/EllipseMob.jpg";
+import { useNavigate } from "react-router-dom";
 
 const UpperFooter = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -24,7 +26,9 @@ const UpperFooter = () => {
           Start trading with powerful tools, real-time insights, and a secure
           platform for better profits.
         </p>
-        <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition">
+        <button className="bg-[#b9f33f] text-black px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition"
+          onClick={() => {navigate("/services");}}
+        >
           Get Started
         </button>
       </div>

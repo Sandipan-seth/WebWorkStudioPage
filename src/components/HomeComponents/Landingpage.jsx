@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { AnimatedShinyTextDemo } from "./Animationtext/AnimationText";
 
 function Landingpage() {
@@ -11,6 +12,8 @@ function Landingpage() {
     "Webworks Studio is a creative Digital Agency specialized",
     "in designing and developing High Impact Websites",
   ];
+
+    const navigation = useNavigate();
 
   return (
     <div className="flex flex-col mx-auto max-w-7xl justify-center items-center h-auto bg-white/60 text-black px-4 sm:px-6 text-center pt-12 pb-16">
@@ -36,7 +39,9 @@ function Landingpage() {
         <div className="bg-black cursor-pointer text-white rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
           Book a Call
         </div>
-        <div className="bg-[#B9F33F] cursor-pointer text-black rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40">
+        <div className="bg-[#B9F33F] cursor-pointer text-black rounded-2xl px-6 py-3 text-sm sm:text-base font-medium text-center w-60 sm:w-40"
+          onClick={() => {navigation("/services");}}
+        >
           Explore Service
         </div>
       </div>
