@@ -10,6 +10,33 @@ import { useNavigate } from "react-router-dom";
 
 const LowerFooter = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = React.useState("");
+
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData();
+
+    formData.append("email", email);
+
+
+    formData.append("access_key", "b3927034-5f44-4ec2-a67f-d1f64f95eb45");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setEmail("");
+    } else {
+      console.log("Error", data);
+    }
+    setLoading(false);
+  };
+
   return (
     <div className="bg-white">
       <div className="bg-white text-black px-6 py-10 flex flex-col max-w-7xl mx-auto">
@@ -24,22 +51,31 @@ const LowerFooter = () => {
           <div>
             <h3 className="mb-3 text-xl font-bold">Company</h3>
             <ul className="space-y-2 text-md">
-              <li className="hover:underline cursor-pointer"
+              <li
+                className="hover:underline cursor-pointer"
                 onClick={() => {
-                  navigate('/about-us')
+                  navigate("/about-us");
                 }}
-              >About Us</li>
-              <li className="hover:underline cursor-pointer"
+              >
+                About Us
+              </li>
+              <li
+                className="hover:underline cursor-pointer"
                 onClick={() => {
-                  navigate('/services')
+                  navigate("/services");
                 }}
-              >Services</li>
-              
-              <li className="hover:underline cursor-pointer"
+              >
+                Services
+              </li>
+
+              <li
+                className="hover:underline cursor-pointer"
                 onClick={() => {
-                  navigate('/contact-us')
+                  navigate("/contact-us");
                 }}
-              >Contact</li>
+              >
+                Contact
+              </li>
             </ul>
           </div>
 
@@ -75,14 +111,21 @@ const LowerFooter = () => {
           {/* Email Section */}
           <div className="flex flex-col items-start text-left w-full max-w-xs">
             <h3 className="font-bold text-xl mb-3">Send us email</h3>
-            <div className="flex items-center border border-black rounded-full px-3 py-1 w-full">
+            <div className="flex items-center border border-black rounded-full px-3 py-1 w-fit">
               <span className="text-xl mr-2">@</span>
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="flex-grow bg-transparent outline-none text-sm"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <button className="bg-lime-400 text-black font-semibold px-4 py-1 rounded-full ml-2">
+              <button
+                className="bg-lime-400 text-black font-semibold px-4 py-1 rounded-full ml-2"
+                onClick={(e) => {
+                  submitEmail(e);
+                }}
+              >
                 Send
               </button>
             </div>

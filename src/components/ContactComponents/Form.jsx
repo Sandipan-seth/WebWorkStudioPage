@@ -38,7 +38,6 @@ const Form = () => {
     const data = await response.json();
 
     if (data.success) {
-      console.log("Success", data);
       alert("Form submitted successfully!");
       setName("");
       setEmail("");
