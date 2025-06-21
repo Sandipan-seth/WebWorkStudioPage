@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,7 +63,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             aria-label="X (Twitter)"
           >
-            <X className="hover:text-gray-700 transition" size={28} />
+            <FaXTwitter size={28} />
           </a>
         </div>
 
