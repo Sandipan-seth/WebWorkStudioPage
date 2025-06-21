@@ -45,45 +45,48 @@ const projects = [
 const TakeALook = () => {
   return (
     <div className="min-h-screen bg-white/50 py-6 px-8 md:px-10">
-      <div className="relative flex justify-center items-center mt-2 mb-16">
-        <div className="flex items-center absolute left-[-41px] top-[-4px] sm:left-[130px] sm:top-[-9px] gap-1">
-          <img
-            src={faq_blackline1}
-            alt="Black Line 1"
-            className="relative h-4 sm:h-6 translate-x-[59px] translate-y-[-17px] sm:translate-x-[43px] sm:translate-y-[-24px]"
-          />
-          <img
-            src={faq_blackline2}
-            alt="Black Line 2"
-            className="relative h-4 sm:h-6 translate-x-[33px] translate-y-[-10px] sm:translate-x-[5px] sm:translate-y-[-16px]"
-          />
-          <img
-            src={faq_blackline3}
-            alt="Black Line 3"
-            className="relative object-contain h-4 w-5 sm:w-8 sm:h-6 translate-x-[5px] translate-y-[2px] sm:translate-x-[-35px]"
-          />
-        </div>
-        <h2 className="text-3xl md:text-6xl font-bold text-center">
-          Take A Look At Our <span className="text-[#b9f33f]">Websites</span>
-        </h2>
-        <div className="flex items-center absolute top-[-4px] right-12 sm:-top-0 sm:right-[229px] gap-1">
-          <img
-            src={faq_greenline1}
-            alt="Green Line 1"
-            className="relative h-4 translate-x-[84px] translate-y-[-14px] sm:h-6 sm:translate-x-[120px] sm:translate-y-[-24px]"
-          />
-          <img
-            src={faq_greenline2}
-            alt="Green Line 2"
-            className="relative h-3 translate-x-[78px] translate-y-[-8px] sm:h-5 sm:translate-x-[114px] sm:translate-y-[-18px]"
-          />
-          <img
-            src={faq_greenline3}
-            alt="Green Line 3"
-            className="relative object-contain h-4 w-5 translate-x-[60px] translate-y-[5px] sm:w-8 sm:h-6 sm:translate-x-[90px] sm:translate-y-[-2px]"
-          />
+      <div className="flex justify-center items-center gap-2">
+        <div className="relative flex justify-center items-center mt-2 mb-16">
+          <div className="flex items-center absolute left-[-41px] top-[-4px] sm:left-[-60px] sm:top-[-7px] gap-1">
+            <img
+              src={faq_blackline1}
+              alt="Black Line 1"
+              className="relative h-4 sm:h-6 translate-x-[59px] translate-y-[-17px] sm:translate-x-[43px] sm:translate-y-[-24px]"
+            />
+            <img
+              src={faq_blackline2}
+              alt="Black Line 2"
+              className="relative h-4 sm:h-6 translate-x-[33px] translate-y-[-10px] sm:translate-x-[5px] sm:translate-y-[-16px]"
+            />
+            <img
+              src={faq_blackline3}
+              alt="Black Line 3"
+              className="relative object-contain h-4 w-5 sm:w-8 sm:h-6 translate-x-[5px] translate-y-[2px] sm:translate-x-[-35px]"
+            />
+          </div>
+          <h2 className="text-3xl md:text-6xl font-bold text-center">
+            Take A Look At Our <span className="text-[#b9f33f]">Websites</span>
+          </h2>
+          <div className="flex items-center absolute top-[-2px] right-[52px] sm:top-2 sm:right-[49px] gap-1">
+            <img
+              src={faq_greenline1}
+              alt="Green Line 1"
+              className="relative h-4 translate-x-[84px] translate-y-[-14px] sm:h-6 sm:translate-x-[120px] sm:translate-y-[-24px]"
+            />
+            <img
+              src={faq_greenline2}
+              alt="Green Line 2"
+              className="relative h-3 translate-x-[78px] translate-y-[-8px] sm:h-5 sm:translate-x-[114px] sm:translate-y-[-18px]"
+            />
+            <img
+              src={faq_greenline3}
+              alt="Green Line 3"
+              className="relative object-contain h-4 w-5 translate-x-[60px] translate-y-[5px] sm:w-8 sm:h-6 sm:translate-x-[90px] sm:translate-y-[-2px]"
+            />
+          </div>
         </div>
       </div>
+
 
       <div className="space-y-16 max-w-6xl mx-auto">
         {projects.map((project) => (
