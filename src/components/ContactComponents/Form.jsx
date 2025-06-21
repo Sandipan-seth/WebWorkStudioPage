@@ -4,6 +4,7 @@ import contactLogo from "../../assets/ContactAssets/ContactLogo.png";
 const Form = () => {
   const [agreed, setAgreed] = React.useState(false);
   const [name, setName] = React.useState("");
+  
   const [email, setEmail] = React.useState("");
   const [website, setWebsite] = React.useState("");
   const [budget, setBudget] = React.useState("");
