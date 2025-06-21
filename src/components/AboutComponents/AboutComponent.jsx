@@ -7,7 +7,7 @@ const steps = [
     id: 1,
     title: "Our Mission",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "To empower individuals and businesses by crafting intuitive, impactful, and scalable digital solutions that drive growth and innovation.",
     stepLabel: "First Step",
     image: Step1,
   },
@@ -15,7 +15,7 @@ const steps = [
     id: 2,
     title: "Our Objective",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "To deliver high-quality web and mobile applications tailored to industry needs, focusing on user experience, performance, and reliability.",
     stepLabel: "Second Step",
     image: Step2,
   },
@@ -23,12 +23,11 @@ const steps = [
     id: 3,
     title: "Our Principles",
     description:
-      "We are specialized in designing apps and websites and products for industry purposes with well bed and consuming, making things look ok.",
+      "We believe in transparency, user-centric design, and continuous improvement to create solutions that truly matter to our clients and their users.",
     stepLabel: "Third Step",
     image: Step1,
   },
 ];
-
 function AboutComponent() {
 
   return (
