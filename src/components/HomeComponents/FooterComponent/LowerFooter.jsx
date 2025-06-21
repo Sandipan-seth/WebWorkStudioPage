@@ -138,7 +138,7 @@ const LowerFooter = () => {
         {/* Bottom Bar */}
         <div className="mt-10 pt-4 border-t flex flex-col md:flex-row justify-between items-center text-sm w-full">
           <p>
-            © {new Date().getFullYear()} WebWorks Studio. All rights reserved.
+            © {new Date().getFullYear()} WebWorksStudio. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-2 md:mt-0 text-base cursor-pointer">
             <FaXTwitter size={24} />

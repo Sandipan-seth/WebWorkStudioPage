@@ -1,18 +1,13 @@
 import { useState } from "react";
 import Logo from "../../assets/Logo.png";
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const details = ["Home", "About us", "Services",  "Contact us"];
+  const details = ["Home", "About us", "Services", "Contact us"];
   const navigate = useNavigate();
 
   return (
