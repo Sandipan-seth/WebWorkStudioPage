@@ -1,8 +1,9 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"; // Changed FaTwitter to FaInstagram
 import Rupam from "../../assets/Team/Rupam.jpg";
-import Sandipan from "../../assets/Team/Sandipan.png";
-
+//import Sandipan from "../../assets/Team/Sandipan.png";
+import Soham from "../../assets/Team/Sohom.jpg";
+import Debdeep from "../../assets/Team/Debdeep.jpg";
 function Team() {
   const team = [
     {
@@ -34,7 +35,7 @@ function Team() {
       role: "UI/UX Designer",
       description:
         "Creative designer passionate about intuitive interfaces and user-first design. Loves turning complex ideas into clean, usable designs.",
-      image: Rupam,
+      image: Soham,
       socials: {
         linkedin: "https://www.linkedin.com/in/sohom-das",
         github: "https://github.com/sohomdas",
@@ -46,7 +47,7 @@ function Team() {
       role: "Frontend Developer",
       description:
         "Frontend wizard with a knack for pixel-perfect designs and smooth user experiences. Obsessed with performance and UI polish.",
-      image: Sandipan,
+      image: Debdeep,
       socials: {
         linkedin: "https://www.linkedin.com/in/debdeep-guga",
         github: "https://github.com/debdeepguga",

@@ -52,11 +52,11 @@ const FAQ = () => {
     <div className="w-full max-w-7xl mx-auto py-10 px-2 sm:px-6 lg:px-16">
       <div className="flex justify-center items-center gap-2 mb-6 sm:mb-10">
         <div className="relative flex justify-center items-center mt-2 mb-10">
-          <div className="flex items-center absolute left-[-71px] top-[-4px] sm:left-[-68px] sm:top-[-2px] gap-1">
+          <div className="flex items-center absolute left-[-71px] top-[-4px] sm:left-[-60px] sm:top-[-12px] gap-1">
             <img
               src={faq_blackline1}
               alt="Black Line 1"
-              className="relative h-4 sm:h-6 translate-x-[57px] translate-y-[-17px] sm:translate-x-[43px] sm:translate-y-[-24px]"
+              className="relative h-4 sm:h-6 translate-x-[59px] translate-y-[-17px] sm:translate-x-[43px] sm:translate-y-[-24px]"
             />
             <img
               src={faq_blackline2}
@@ -66,13 +66,13 @@ const FAQ = () => {
             <img
               src={faq_blackline3}
               alt="Black Line 3"
-              className="relative object-contain h-4 w-5 sm:w-8 sm:h-6 translate-x-[5px] sm:translate-x-[-34px]"
+              className="relative object-contain h-4 w-5 sm:w-8 sm:h-6 translate-x-[5px] translate-y-[2px] sm:translate-x-[-35px]"
             />
           </div>
-          <h2 className="sm:text-5xl text-xl font-poppins font-bold text-center">
-            Frequently Asked <span className="text-lime-400">Question</span>
+          <h2 className="sm:text-6xl text-xl font-poppins font-bold text-center">
+            Frequently Asked <span className="text-[#B9F33F]">Question</span>
           </h2>
-          <div className="flex items-center absolute top-[-6px] right-7 sm:top-1 sm:right-6 gap-1">
+          <div className="flex items-center absolute top-[-6px] right-7 sm:-top-2 sm:right-10 gap-1">
             <img
               src={faq_greenline1}
               alt="Green Line 1"
@@ -81,7 +81,7 @@ const FAQ = () => {
             <img
               src={faq_greenline2}
               alt="Green Line 2"
-              className="relative h-3 translate-x-[78px] translate-y-[-8px] sm:h-6 sm:translate-x-[114px] sm:translate-y-[-18px]"
+              className="relative h-3 translate-x-[78px] translate-y-[-8px] sm:h-5 sm:translate-x-[114px] sm:translate-y-[-18px]"
             />
             <img
               src={faq_greenline3}

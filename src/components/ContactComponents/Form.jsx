@@ -2,14 +2,14 @@ import React from 'react'
 import contactLogo from '../../assets/ContactAssets/ContactLogo.png';
 
 const Form = () => {
-    const [agreed, setAgreed] = React.useState(false);
+  const [agreed, setAgreed] = React.useState(false);
   return (
     <div className="min-h-screen flex items-center justify-center bg-white/50 py-16 max-w-7xl mx-auto px-4 mt-5 md:mt-10">
       <div className="w-full">
         {/* Header */}
         <h2 className="text-3xl md:text-6xl font-bold text-center mb-4">
           Want To Collaborate Together ? <br />
-          <span className="text-lime-500 font-bold">Reach</span> Out
+          <span className="text-[#B9F33F] font-bold">Reach</span> Out
         </h2>
 
         {/* Image */}
@@ -84,31 +84,34 @@ const Form = () => {
           </div>
 
           <div className="flex items-center space-x-2">
-            <input type="checkbox" id="terms" className="accent-lime-500" onChange={()=>setAgreed(!agreed)} />
+            <input type="checkbox" id="terms" className="accent-lime-500" onChange={() => setAgreed(!agreed)} />
             <label htmlFor="terms" className="text-sm">
               Agree To The Terms And Conditions
             </label>
           </div>
 
-          {
-            agreed ? (
-              <button
-            type="submit"
-            className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-            
-          >
-            Submit
-          </button>
-            ) : (
-              <button
-                type="submit"
-                disabled
-                className="w-full bg-gray-300 text-gray-500 py-2 rounded-md font-semibold cursor-not-allowed"
-              >
-                Submit
-              </button>
-            )
-          }
+          <div className='flex justify-center md:justify-start'>
+            {
+              agreed ? (
+                <button
+                  type="submit"
+                  className="mt-4 w-1/4 bg-black text-white md:text-lg text-sm py-2 rounded-3xl hover:bg-gray-800 transition"
+
+                >
+                  Submit
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  disabled
+                  className="w-1/4 bg-gray-300 text-gray-500 py-2 rounded-3xl font-semibold cursor-not-allowed"
+                >
+                  Submit
+                </button>
+              )
+            }
+          </div>
+
         </form>
       </div>
     </div>

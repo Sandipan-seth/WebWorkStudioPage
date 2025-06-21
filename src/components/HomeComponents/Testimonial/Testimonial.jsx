@@ -58,18 +58,18 @@ const Testimonial = () => {
         <div className="w-full max-w-7xl mx-auto px-4 mt-14 text-center">
             {/* Heading */}
             <div className="relative flex justify-center items-center mt-2 mb-2">
-                <div className="sm:flex items-center absolute left-[181px] top-[-11px] sm:left-[302px] sm:top-[-5px] gap-1">
+                <div className="sm:flex items-center absolute left-[160px] top-[-11px] sm:left-[302px] sm:top-[-5px] gap-1">
                     <img src={faq_blackline1} alt="Black Line 1" className="relative h-3 translate-x-[-115px] translate-y-[-5px] sm:h-6 sm:translate-x-[43px] sm:translate-y-[-24px]" />
                     <img src={faq_blackline2} alt="Black Line 2" className="relative h-3 translate-x-[-128px] translate-y-[-12px] sm:h-6 sm:translate-x-[5px] sm:translate-y-[-16px]" />
                     <img src={faq_blackline3} alt="Black Line 3" className="relative object-contain h-3 w-4 translate-x-[-136px] translate-y-[-13px] sm:translate-y-[0px] sm:w-8 sm:h-6 sm:translate-x-[-34px]" />
                 </div>
 
-                <h2 className="text-2xl sm:text-6xl font-aeonik font-bold mb-0">
-                    Words That <span className="text-lime-400">Inspire</span>
+                <h2 className="text-3xl sm:text-6xl font-aeonik font-bold mb-0">
+                    Words That <span className="text-[#B9F33F]">Inspire</span>
                 </h2>
 
-                <div className="sm:flex items-center absolute top-[-15px] right-[175px] sm:top-[1px] sm:right-[408px] gap-1">
-                    <img src={faq_greenline1} alt="Green Line 1" className="relative h-4 translate-x-[118px] sm:h-6 sm:translate-x-[120px] sm:translate-y-[-24px]" />
+                <div className="sm:flex items-center absolute top-[-15px] right-[156px] sm:top-[1px] sm:right-[408px] gap-1">
+                    <img src={faq_greenline1} alt="Green Line 1" className="relative h-4 translate-x-[118px] sm:h-7 sm:translate-x-[120px] sm:translate-y-[-24px]" />
                     <img src={faq_greenline2} alt="Green Line 2" className="relative object-contain h-3 w-4 translate-x-[124px] translate-y-[-9px] sm:w-8 sm:h-6 sm:translate-x-[114px] sm:translate-y-[-18px]" />
                     <img src={faq_greenline3} alt="Green Line 3" className="relative object-contain h-3 w-4 translate-x-[128px] translate-y-[-10px] sm:w-8 sm:h-6 sm:translate-x-[90px] sm:translate-y-[-2px]" />
                 </div>

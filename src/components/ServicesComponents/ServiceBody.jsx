@@ -1,7 +1,12 @@
 import React from "react";
 import Step1 from "../../assets/ServiceAssets/Step1.png";
 import { ArrowUpRight } from "lucide-react";
-
+import faq_blackline1 from "../../assets/HomeAssets/FAQ/faq_blackline1.png";
+import faq_blackline2 from "../../assets/HomeAssets/FAQ/faq_blackline2.png";
+import faq_blackline3 from "../../assets/HomeAssets/FAQ/faq_blackline3.png";
+import faq_greenline1 from "../../assets/HomeAssets/FAQ/faq_greenline1.png";
+import faq_greenline2 from "../../assets/HomeAssets/FAQ/faq_greenline2.png";
+import faq_greenline3 from "../../assets/HomeAssets/FAQ/faq_greenline3.png";
 const ServiceBody = () => {
   const steps = [
     {
@@ -45,17 +50,53 @@ const ServiceBody = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white/50 py-16 max-w-7xl mx-auto px-4 mt-5 md:mt-10">
       <div className="w-full">
-        <h2 className="text-3xl md:text-6xl font-bold text-center mb-5 md:mb-20">
-          What We Have <span className="text-lime-500 font-bold">Got</span> For{" "}
-          <span className="text-lime-500 font-bold">You</span>
-        </h2>
+        <div className="relative flex justify-center items-center mt-2 mb-10">
+          <div className="flex items-center absolute left-[-51px] top-[-1px] sm:left-[175px] sm:top-[-2px] gap-1">
+            <img
+              src={faq_blackline1}
+              alt="Black Line 1"
+              className="relative h-4 sm:h-6 translate-x-[57px] translate-y-[-17px] sm:translate-x-[43px] sm:translate-y-[-24px]"
+            />
+            <img
+              src={faq_blackline2}
+              alt="Black Line 2"
+              className="relative h-4 sm:h-6 translate-x-[33px] translate-y-[-10px] sm:translate-x-[5px] sm:translate-y-[-16px]"
+            />
+            <img
+              src={faq_blackline3}
+              alt="Black Line 3"
+              className="relative object-contain h-4 w-5 sm:w-8 sm:h-6 translate-x-[5px] sm:translate-x-[-34px]"
+            />
+          </div>
+          <h2 className="text-3xl md:text-6xl font-bold text-center mb-5 md:mb-20">
+            What We Have <span className="text-[#b9f33f] font-bold">Got</span> For{" "}
+            <span className="text-[#b9f33f] font-bold">You</span>
+          </h2>
+          <div className="flex items-center absolute top-[-1px] right-12 sm:top-1 sm:right-[278px] gap-1">
+            <img
+              src={faq_greenline1}
+              alt="Green Line 1"
+              className="relative h-4 translate-x-[84px] translate-y-[-14px] sm:h-6 sm:translate-x-[120px] sm:translate-y-[-24px]"
+            />
+            <img
+              src={faq_greenline2}
+              alt="Green Line 2"
+              className="relative h-3 translate-x-[78px] translate-y-[-8px] sm:h-5 sm:translate-x-[114px] sm:translate-y-[-18px]"
+            />
+            <img
+              src={faq_greenline3}
+              alt="Green Line 3"
+              className="relative object-contain h-4 w-5 translate-x-[60px] translate-y-[5px] sm:w-8 sm:h-6 sm:translate-x-[90px] sm:translate-y-[-2px]"
+            />
+          </div>
+        </div>
+
 
         {steps.map((step, index) => (
           <div
             key={step.id}
-            className={`mb-3 flex flex-col justify-center md:flex-row items-stretch py-5 md:py-10 ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`mb-3 flex flex-col justify-center md:flex-row items-stretch py-5 md:py-10 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
           >
             <div
               className={`md:w-1/3 mb-6 md:mb-0 flex justify-center 

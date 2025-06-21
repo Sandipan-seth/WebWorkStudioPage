@@ -52,7 +52,7 @@ const WhoAreWe = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-36 gap-10 text-center md:translate-x-[-22px] md:pt-20 md:mb-4">
+            <div className="grid md:grid-cols-3 grid-cols-3 md:gap-36 gap-8 text-center md:translate-x-[-22px] md:pt-20 md:mb-4">
                 <div className='space-y-2'>
                     <img src={icon1} alt="Websites Built Icon" className="mx-auto md:w-16 w-12 mb-2" />
                     <p className="md:text-3xl text-md font-bold font-poppins text-[#141219]">10+</p>
