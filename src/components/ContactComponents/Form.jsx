@@ -6,6 +6,7 @@ const Form = () => {
   const [name, setName] = React.useState("");
   
   const [email, setEmail] = React.useState("");
+  const [mobile, setMobile] = React.useState("");
   const [website, setWebsite] = React.useState("");
   const [budget, setBudget] = React.useState("");
   const [source, setSource] = React.useState("");
@@ -23,6 +24,7 @@ const Form = () => {
     formData.append("website", website);
     formData.append("budget", budget);
     formData.append("source", source);
+    formData.append("mobile", mobile);
     formData.append("project_details", projectDetails);
     
 
@@ -41,6 +43,7 @@ const Form = () => {
       alert("Form submitted successfully!");
       setName("");
       setEmail("");
+      setMobile("");
       setWebsite("");
       setBudget("");
       setSource("");
@@ -99,6 +102,18 @@ const Form = () => {
               className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-2"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div>
+            <label className="block text-md md:text-xl font-medium text-gray-700 mb-1">
+              Your Mobile Number
+            </label>
+            <input
+              type="tel"
+              className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-2"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
             />
           </div>
 
